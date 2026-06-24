@@ -1,0 +1,18 @@
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#3147a8', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#243684', 'lineColor': '#94a3b8', 'secondaryColor': '#0e766f', 'tertiaryColor': '#b46a00', 'background': '#ffffff', 'mainBkg': '#f8fafc', 'nodeBorder': '#cbd5e1', 'clusterBkg': '#f1f5f9', 'clusterBorder': '#e2e8f0', 'titleColor': '#172033', 'edgeLabelBackground': '#ffffff', 'textColor': '#334155'}}}%%
+flowchart LR
+    userQuestion([User question])
+    fanOut[Query fan-out]
+    retrieval[Search index and web retrieval]
+    candidateSources[Candidate source pages]
+    evaluate{Useful and trustworthy?}
+    synthesize[Generated answer]
+    cite[Citation or link]
+    unused[Not used this time]
+
+    userQuestion --> fanOut
+    fanOut --> retrieval
+    retrieval --> candidateSources
+    candidateSources --> evaluate
+    evaluate -->|Yes| synthesize
+    synthesize --> cite
+    evaluate -->|No| unused

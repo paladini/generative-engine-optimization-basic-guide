@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GEO Basics: Generative Engine Optimization Basic Guide</title>
+    <meta name="description" content="GEO Basics is a beginner guide to Generative Engine Optimization: how AI answer systems discover, understand, trust, and cite web content.">
+    <meta name="keywords" content="GEO, Generative Engine Optimization, AI search, SEO, AI Overviews, ChatGPT Search, Bing Copilot, structured data">
+    <meta name="author" content="Fernando Paladini">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://paladini.github.io/generative-engine-optimization-basic-guide/">
+    <link rel="alternate" hreflang="en" href="https://paladini.github.io/generative-engine-optimization-basic-guide/">
+    <link rel="alternate" hreflang="pt-BR" href="https://paladini.github.io/generative-engine-optimization-basic-guide/lang/pt-br/">
+    <link rel="alternate" hreflang="x-default" href="https://paladini.github.io/generative-engine-optimization-basic-guide/">
+    <link rel="icon" href="assets/images/geo-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/site.css?v=20260624b">
+
+    <meta name="DC.Title" content="GEO Basics: Generative Engine Optimization Basic Guide">
+    <meta name="DC.Creator" content="Fernando Paladini">
+    <meta name="DC.Subject" content="Generative Engine Optimization">
+    <meta name="DC.Description" content="A beginner guide to Generative Engine Optimization for websites, articles, and web content.">
+    <meta name="DC.Publisher" content="Fernando Paladini">
+    <meta name="DC.Date" content="2026-06-24">
+    <meta name="DC.Type" content="Text">
+    <meta name="DC.Format" content="text/html">
+    <meta name="DC.Identifier" content="https://paladini.github.io/generative-engine-optimization-basic-guide/">
+    <meta name="DC.Language" content="en">
+    <meta name="DC.Rights" content="MIT License">
+
+    <meta property="og:title" content="GEO Basics">
+    <meta property="og:description" content="A simple, source-backed beginner guide to Generative Engine Optimization.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://paladini.github.io/generative-engine-optimization-basic-guide/">
+    <meta property="og:image" content="https://paladini.github.io/generative-engine-optimization-basic-guide/assets/images/geo-mark.svg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="GEO Basics">
+    <meta name="twitter:description" content="A simple, source-backed beginner guide to Generative Engine Optimization.">
+    <meta name="twitter:image" content="https://paladini.github.io/generative-engine-optimization-basic-guide/assets/images/geo-mark.svg">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "GEO Basics: Generative Engine Optimization Basic Guide",
+        "description": "A beginner guide to Generative Engine Optimization for websites, articles, and web content.",
+        "author": {
+          "@type": "Person",
+          "name": "Fernando Paladini"
+        },
+        "datePublished": "2026-06-24",
+        "dateModified": "2026-06-24",
+        "inLanguage": "en",
+        "about": [
+          "Generative Engine Optimization",
+          "AI search",
+          "Search engine optimization"
+        ],
+        "license": "https://opensource.org/license/mit"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="progress" aria-hidden="true"><span class="progress__bar" data-progress></span></div>
+
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a class="brand" href="#top" aria-label="GEO Basics home">
+          <img class="brand__mark" src="assets/images/geo-mark.svg" alt="">
+          <span>GEO Basics</span>
+        </a>
+        <nav class="topbar__links" data-section-nav aria-label="Guide sections">
+          <a href="#what">What is GEO?</a>
+          <a href="#systems">How AI answers work</a>
+          <a href="#apply">Apply it</a>
+          <a href="#examples">Examples</a>
+          <a href="#measure">Measure</a>
+          <a href="#sources">Sources</a>
+          <a href="lang/pt-br/index.html" hreflang="pt-BR">PT-BR</a>
+          <a href="https://github.com/paladini/generative-engine-optimization-basic-guide" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="hero__inner">
+        <div>
+          <h1>GEO Basics</h1>
+          <p class="hero__subtitle">Generative Engine Optimization: Basic Guide</p>
+          <p class="hero__text">
+            GEO is the practice of making your web content easy for generative answer systems to find,
+            understand, trust, and cite. It is not a replacement for SEO. It is SEO seen through the
+            lens of AI answers.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#what">Start the guide</a>
+            <a class="button" href="lang/pt-br/index.html" hreflang="pt-BR">Ler em Portugues</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-label="Simplified map of GEO">
+          <div class="answer-map">
+            <div class="answer-map__row">
+              <div class="answer-map__node">
+                <strong>Question</strong>
+                <span>A user asks in natural language.</span>
+              </div>
+              <span class="answer-map__arrow">to</span>
+              <div class="answer-map__node">
+                <strong>Retrieval</strong>
+                <span>The system searches for useful sources.</span>
+              </div>
+            </div>
+            <div class="answer-map__row">
+              <div class="answer-map__node">
+                <strong>Evidence</strong>
+                <span>Pages, data, examples, and expert context.</span>
+              </div>
+              <span class="answer-map__arrow">to</span>
+              <div class="answer-map__node">
+                <strong>Answer</strong>
+                <span>The AI summarizes and links supporting pages.</span>
+              </div>
+            </div>
+            <div class="answer-map__wide">
+              <strong>Your GEO job</strong>
+              <span>Be clear enough to retrieve, useful enough to quote, and trustworthy enough to cite.</span>
+            </div>
+          </div>
+          <p class="hero__note">Use the arrow keys to move through sections, like an old-school guide.</p>
+        </div>
+      </div>
+    </section>
+
+    <main id="main">
+      <section class="section" id="what">
+        <div class="section__inner">
+          <div class="section__header">
+            <span class="section__number">01. The idea</span>
+            <h2>What is GEO?</h2>
+            <p class="lead">
+              Generative Engine Optimization means improving how your content appears in AI-generated answers.
+              The target is not only a blue link. The target is being selected as a useful source when a system
+              builds an answer.
+            </p>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="card">
+              <h3>SEO still matters</h3>
+              <p>
+                Generative search systems usually depend on crawlable, indexable web content. If a page cannot
+                be found and understood by search, it is unlikely to help an AI answer.
+              </p>
+            </article>
+            <article class="card">
+              <h3>GEO adds citation thinking</h3>
+              <p>
+                A page should answer clear questions, show evidence, name entities consistently, and make the
+                best parts easy to extract without losing context.
+              </p>
+            </article>
+            <article class="card">
+              <h3>No magic switch</h3>
+              <p>
+                There is no tag that guarantees an AI citation. GEO is about eligibility, clarity, usefulness,
+                and trust signals that make your content a better source.
+              </p>
+            </article>
+          </div>
+
+          <ul class="pill-list" aria-label="GEO basics">
+            <li>Crawlable pages</li>
+            <li>Clear headings</li>
+            <li>Direct answers</li>
+            <li>Evidence and sources</li>
+            <li>Structured data</li>
+            <li>Fresh updates</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="systems">
+        <div class="section__inner">
+          <div class="section__header">
+            <span class="section__number">02. The machine view</span>
+            <h2>How AI answers use the web</h2>
+            <p class="lead">
+              Many AI search experiences combine retrieval with generation. The system expands the question,
+              finds candidate sources, extracts useful passages, writes a response, and may show citations.
+            </p>
+          </div>
+
+          <figure class="diagram">
+            <img src="assets/diagrams/geo-answer-pipeline.svg" alt="Flow from user question to query fan-out, retrieval, source evaluation, synthesis, and citation.">
+            <figcaption class="caption">
+              A simplified answer pipeline. In practice, each platform is different, but the GEO habit is the same:
+              make the page easy to retrieve, parse, evaluate, and cite.
+            </figcaption>
+          </figure>
+
+          <div class="callout">
+            <p>
+              The useful mental model: AI answers do not simply "rank ten links." They often synthesize from
+              multiple searches and supporting pages. That is why narrow keyword matching is weaker than clear,
+              well-supported answers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pillars">
+        <div class="section__inner">
+          <div class="section__header">
+            <span class="section__number">03. The basics</span>
+            <h2>The six GEO pillars</h2>
+            <p class="lead">
+              If you only remember one thing, remember this sequence: discover, understand, trust, quote,
+              connect, refresh.
+            </p>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="card">
+              <h3>1. Discoverable</h3>
+              <p>Allow useful pages to be crawled. Use sensible internal links, sitemaps, canonical URLs, and pages that load without hiding the main content.</p>
+            </article>
+            <article class="card">
+              <h3>2. Understandable</h3>
+              <p>Use descriptive titles, headings, semantic HTML, entity names, definitions, and structured data when it matches visible content.</p>
+            </article>
+            <article class="card">
+              <h3>3. Useful</h3>
+              <p>Answer real questions directly. Add examples, comparisons, limits, tradeoffs, and next steps instead of generic filler.</p>
+            </article>
+            <article class="card">
+              <h3>4. Trustworthy</h3>
+              <p>Show who created the content, when it was updated, what evidence supports it, and where readers can verify important claims.</p>
+            </article>
+            <article class="card">
+              <h3>5. Quotable</h3>
+              <p>Write compact answer blocks, tables, bullet lists, definitions, and summaries that can stand alone while still linking to deeper context.</p>
+            </article>
+            <article class="card">
+              <h3>6. Fresh</h3>
+              <p>Update time-sensitive pages. Mark dates clearly. Remove stale claims. Use tools like Search Console, Bing Webmaster Tools, and IndexNow where relevant.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="apply">
+        <div class="section__inner">
+          <div class="section__header">
+            <span class="section__number">04. Practice</span>
+            <h2>How to apply GEO to a page</h2>
+            <p class="lead">
+              Start with the page a human sees. If a rushed reader can understand the answer, the evidence,
+              and the next step, an AI retrieval system has a cleaner source to work with.
+            </p>
+          </div>
+
+          <div class="steps">
+            <article class="step">
+              <div>
+                <h3>Choose one search intent</h3>
+                <p>Write the page around a clear question or task. Avoid making one page answer everything vaguely.</p>
+              </div>
+            </article>
+            <article class="step">
+              <div>
+                <h3>Open with the answer</h3>
+                <p>Give a concise answer near the top, then explain details, examples, exceptions, and proof below it.</p>
+              </div>
+            </article>
+            <article class="step">
+              <div>
+                <h3>Make entities explicit</h3>
+                <p>Name the product, person, brand, location, standard, method, or topic consistently. Link related pages.</p>
+              </div>
+            </article>
+            <article class="step">
+              <div>
+                <h3>Add verifiable support</h3>
+                <p>Use original examples, dates, sources, screenshots, data, author notes, or methodology where they help the reader.</p>
+              </div>
+            </article>
+          </div>
+
+          <figure class="diagram">
+            <img src="assets/diagrams/geo-page-anatomy.svg" alt="Anatomy of a GEO-ready page with answer, evidence, structure, metadata, and measurement.">
+            <figcaption class="caption">
+              A GEO-ready page is not stuffed with keywords. It is arranged so the main claim, proof, and context are easy to inspect.
+            </figcaption>
+          </figure>
+
+          <ul class="checklist" aria-label="GEO page checklist">
+            <li>Use one clear title and description.</li>
+            <li>Put the direct answer near the top.</li>
+            <li>Break sections with meaningful headings.</li>
+            <li>Use tables for comparisons and facts.</li>
+            <li>Add schema only for visible content.</li>
+            <li>Show author, publisher, and update dates.</li>
+            <li>Link to primary sources and deeper pages.</li>
+            <li>Keep important content crawlable in HTML.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="examples">
+        <div class="section__inner">
+          <div class="section__header">
+            <span class="section__number">05. Examples</span>
+            <h2>Small snippets you can reuse</h2>
+            <p class="lead">
+              These are not magic tags. They are examples of clear publishing: metadata, structured data,
+              crawler controls, and article shape.
+            </p>
+          </div>
+
+          <article class="card">
+            <h3>Basic page metadata</h3>
+            <p>Use a specific title and description. Add canonical and language alternates when you have translated pages.</p>
+            <div class="snippet">
+              <div class="snippet__top">
+                <span>HTML head</span>
+                <button class="copy-button" data-copy="#snippet-meta" data-copied="Copied" data-failed="Select">Copy</button>
+              </div>
+              <pre><code id="snippet-meta">&lt;title&gt;GEO Basics: Generative Engine Optimization Guide&lt;/title&gt;
+&lt;meta name="description" content="A beginner guide to GEO for websites, articles, and web content."&gt;
+&lt;link rel="canonical" href="https://example.com/generative-engine-optimization-basic-guide/"&gt;
+&lt;link rel="alternate" hreflang="en" href="https://example.com/generative-engine-optimization-basic-guide/"&gt;
+&lt;link rel="alternate" hreflang="pt-BR" href="https://example.com/generative-engine-optimization-basic-guide/lang/pt-br/"&gt;</code></pre>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>JSON-LD for an article</h3>
+            <p>Structured data helps make explicit clues about the page. It should match what readers can see.</p>
+            <div class="snippet">
+              <div class="snippet__top">
+                <span>JSON-LD</span>
+                <button class="copy-button" data-copy="#snippet-jsonld" data-copied="Copied" data-failed="Select">Copy</button>
+              </div>
+              <pre><code id="snippet-jsonld">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "How to apply GEO to a product page",
+  "author": { "@type": "Person", "name": "Ana Silva" },
+  "dateModified": "2026-06-24",
+  "inLanguage": "en",
+  "about": ["Generative Engine Optimization", "AI search"]
+}
+&lt;/script&gt;</code></pre>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>OpenAI crawler controls</h3>
+            <p>OpenAI documents separate user agents for search and model training. Decide what your site wants to allow.</p>
+            <div class="snippet">
+              <div class="snippet__top">
+                <span>robots.txt example</span>
+                <button class="copy-button" data-copy="#snippet-robots" data-copied="Copied" data-failed="Select">Copy</button>
+              </div>
+              <pre><code id="snippet-robots">User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://example.com/sitemap.xml</code></pre>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>A quotable article structure</h3>
+            <p>Make the useful answer easy to quote, then give the reader proof and context.</p>
+            <div class="snippet">
+              <div class="snippet__top">
+                <span>Content outline</span>
+                <button class="copy-button" data-copy="#snippet-outline" data-copied="Copied" data-failed="Select">Copy</button>
+              </div>
+              <pre><code id="snippet-outline">H1: What is [topic]?
+Short answer: one paragraph that directly answers the question.
+Why it matters: who needs it and what problem it solves.
+How it works: steps, diagram, or table.
+Example: a real scenario, not a generic claim.
+Evidence: sources, data, author experience, or methodology.
+Limits: when this advice does not apply.
+Next step: what the reader should do now.</code></pre>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="myths">
+        <div class="section__inner">
+          <div class="section__header">
+            <span class="section__number">06. Caution</span>
+            <h2>What GEO is not</h2>
+            <p class="lead">
+              Because GEO is new, the name attracts overconfident advice. A careful guide should say what not to do.
+            </p>
+          </div>
+
+          <div class="grid grid--2">
+            <article class="card">
+              <h3>Not a guarantee</h3>
+              <p>No publisher can force ChatGPT, Google AI Overviews, Bing Copilot, Perplexity, or another system to cite a page.</p>
+            </article>
+            <article class="card">
+              <h3>Not keyword stuffing</h3>
+              <p>Writing every possible question variation can create thin pages. Make fewer pages better and more complete.</p>
+            </article>
+            <article class="card">
+              <h3>Not secret markup</h3>
+              <p>Structured data helps search understand content, but there is no special schema that guarantees generative AI visibility.</p>
+            </article>
+            <article class="card">
+              <h3>Not only text</h3>
+              <p>Useful images, video, diagrams, product feeds, and business profiles can help when they match what users need.</p>
+            </article>
+          </div>
+
+          <div class="callout">
+            <p>
+              About `llms.txt`: it may be useful for specific tools that choose to read it, but Google says it is not used for Google Search
+              or its generative AI search features. Do not treat it as a required GEO step.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="measure">
+        <div class="section__inner">
+          <div class="section__header">
+            <span class="section__number">07. Improvement loop</span>
+            <h2>How to measure GEO work</h2>
+            <p class="lead">
+              GEO measurement is still immature. Start with signals you can actually observe: crawlability,
+              indexed pages, citations where available, prompt checks, logs, and content updates.
+            </p>
+          </div>
+
+          <figure class="diagram">
+            <img src="assets/diagrams/geo-content-loop.svg" alt="Loop from research prompts to publish content, observe citations, improve evidence, and refresh pages.">
+            <figcaption class="caption">
+              GEO is a loop. Research the questions, publish useful pages, observe where you are cited or ignored,
+              and improve the page with clearer answers and stronger evidence.
+            </figcaption>
+          </figure>
+
+          <div class="grid grid--3">
+            <article class="card">
+              <h3>Search Console</h3>
+              <p>Use it for indexing, crawl, query, and page performance. It is still the basic health check for Google discovery.</p>
+            </article>
+            <article class="card">
+              <h3>Bing AI Performance</h3>
+              <p>Bing's 2026 preview reports citations, cited pages, grounding queries, and citation trends for supported Microsoft AI surfaces.</p>
+            </article>
+            <article class="card">
+              <h3>Manual prompt checks</h3>
+              <p>Track a small set of realistic questions. Record whether you are cited, who is cited, and what format the answer prefers.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="sources">
+        <div class="section__inner">
+          <div class="section__header">
+            <span class="section__number">08. Sources</span>
+            <h2>Read the originals</h2>
+            <p class="lead">
+              GEO changes quickly. Use this guide as a starting point, then verify important platform rules in primary sources.
+            </p>
+          </div>
+
+          <div class="source-list">
+            <article class="source">
+              <a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener">Google Search Central: AI features and your website</a>
+              <span>Explains AI Overviews, AI Mode, and how site owners should think about inclusion.</span>
+            </article>
+            <article class="source">
+              <a href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide" target="_blank" rel="noopener">Google Search Central: optimizing for generative AI features</a>
+              <span>Google's official guidance on applying foundational SEO to generative AI search.</span>
+            </article>
+            <article class="source">
+              <a href="https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview" target="_blank" rel="noopener">Bing Webmaster Blog: AI Performance</a>
+              <span>Introduces citation and grounding-query reporting for Microsoft AI experiences.</span>
+            </article>
+            <article class="source">
+              <a href="https://developers.openai.com/api/docs/bots" target="_blank" rel="noopener">OpenAI Developers: crawler overview</a>
+              <span>Documents OpenAI user agents and crawler controls for search and training use cases.</span>
+            </article>
+            <article class="source">
+              <a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" target="_blank" rel="noopener">Google Search Central: structured data intro</a>
+              <span>Explains how structured data gives explicit clues about page meaning.</span>
+            </article>
+            <article class="source">
+              <a href="https://schema.org/" target="_blank" rel="noopener">Schema.org</a>
+              <span>The shared vocabulary used by search engines and applications for structured data.</span>
+            </article>
+            <article class="source">
+              <a href="https://arxiv.org/abs/2311.09735" target="_blank" rel="noopener">GEO: Generative Engine Optimization</a>
+              <span>The original research paper that named GEO and studied visibility in generative engines.</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <span>GEO Basics. Open-source beginner guide.</span>
+        <span><a href="#top">Back to top</a> · <a href="lang/pt-br/index.html" hreflang="pt-BR">PT-BR</a></span>
+      </div>
+    </footer>
+
+    <script src="assets/js/site.js?v=20260624b" defer></script>
+  </body>
+</html>

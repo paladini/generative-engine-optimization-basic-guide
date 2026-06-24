@@ -1,0 +1,19 @@
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#3147a8', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#243684', 'lineColor': '#94a3b8', 'secondaryColor': '#0e766f', 'tertiaryColor': '#b46a00', 'background': '#ffffff', 'mainBkg': '#f8fafc', 'nodeBorder': '#cbd5e1', 'clusterBkg': '#f1f5f9', 'clusterBorder': '#e2e8f0', 'titleColor': '#172033', 'edgeLabelBackground': '#ffffff', 'textColor': '#334155'}}}%%
+flowchart TD
+    title[Specific title and description]
+    answer[Direct answer near the top]
+    evidence[Evidence, examples, and sources]
+    structure[Clear headings and semantic HTML]
+    entities[Consistent entities and internal links]
+    metadata[Canonical, hreflang, and JSON-LD]
+    freshness[Visible update dates]
+    sourceReady([Better source candidate])
+
+    title --> answer
+    answer --> evidence
+    answer --> structure
+    structure --> entities
+    entities --> metadata
+    evidence --> freshness
+    metadata --> sourceReady
+    freshness --> sourceReady

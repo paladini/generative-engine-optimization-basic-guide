@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">GEO Basics mark</title>
+  <desc id="desc">A simple geometric mark showing a search path becoming an answer.</desc>
+  <rect width="96" height="96" rx="16" fill="#111827"/>
+  <circle cx="28" cy="32" r="12" fill="#0e766f"/>
+  <circle cx="66" cy="30" r="10" fill="#3147a8"/>
+  <circle cx="50" cy="66" r="12" fill="#b46a00"/>
+  <path d="M39 33h16M60 39 54 56M40 58 33 43" fill="none" stroke="#f8fafc" stroke-width="6" stroke-linecap="round"/>
+  <path d="M25 72h48" stroke="#f8fafc" stroke-width="6" stroke-linecap="round" opacity=".82"/>
+</svg>

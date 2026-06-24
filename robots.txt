@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://paladini.github.io/generative-engine-optimization-basic-guide/sitemap.xml
