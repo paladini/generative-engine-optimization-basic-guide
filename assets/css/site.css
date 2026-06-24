@@ -75,6 +75,18 @@ select {
   transform: translateY(0);
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .progress {
   position: fixed;
   inset: 0 0 auto 0;
@@ -145,6 +157,46 @@ select {
 .topbar__links a[aria-current="page"] {
   color: var(--ink);
   background: var(--bg-soft);
+}
+
+.topbar__links .language-switch {
+  display: inline-grid;
+  place-items: center;
+  min-width: 2.4rem;
+  min-height: 2rem;
+  padding-inline: 0.45rem;
+}
+
+.flag {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 1.45rem;
+  height: 1rem;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px rgba(17, 24, 39, 0.18);
+}
+
+.flag--br {
+  background: #229e45;
+}
+
+.flag__diamond {
+  display: grid;
+  place-items: center;
+  width: 0.86rem;
+  height: 0.86rem;
+  background: #f8d747;
+  transform: rotate(45deg);
+}
+
+.flag__globe {
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 50%;
+  background: #2445a7;
+  transform: rotate(-45deg);
 }
 
 .hero {
