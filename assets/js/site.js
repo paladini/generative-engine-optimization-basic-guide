@@ -3,9 +3,10 @@
 
   const progressBar = document.querySelector("[data-progress]");
   const navLinks = Array.from(document.querySelectorAll("[data-section-nav] a[href^='#']"));
-  const sections = navLinks
+  const navSections = navLinks
     .map((link) => document.querySelector(link.getAttribute("href")))
     .filter(Boolean);
+  const keyboardSections = Array.from(document.querySelectorAll("section[id]"));
 
   function updateProgress() {
     if (!progressBar) return;
@@ -16,11 +17,11 @@
   }
 
   function updateActiveSection() {
-    if (!sections.length) return;
+    if (!navSections.length) return;
     const marker = window.scrollY + Math.max(96, window.innerHeight * 0.22);
-    let active = sections[0];
+    let active = navSections[0];
 
-    for (const section of sections) {
+    for (const section of navSections) {
       if (section.offsetTop <= marker) active = section;
     }
 
@@ -90,16 +91,14 @@
     window.addEventListener("keydown", (event) => {
       if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
       if (event.key !== "ArrowDown" && event.key !== "ArrowUp") return;
+      if (!keyboardSections.length) return;
 
-      const currentIndex = sections.findIndex((section) => {
-        const rect = section.getBoundingClientRect();
-        return rect.top <= 120 && rect.bottom > 120;
-      });
-
-      const fallbackIndex = sections.findIndex((section) => section.offsetTop > window.scrollY + 120);
-      const index = currentIndex >= 0 ? currentIndex : Math.max(0, fallbackIndex - 1);
+      const marker = window.scrollY + 120;
+      const index = keyboardSections.reduce((current, section, sectionIndex) => {
+        return section.offsetTop <= marker ? sectionIndex : current;
+      }, 0);
       const nextIndex = event.key === "ArrowDown" ? index + 1 : index - 1;
-      const next = sections[Math.max(0, Math.min(sections.length - 1, nextIndex))];
+      const next = keyboardSections[Math.max(0, Math.min(keyboardSections.length - 1, nextIndex))];
 
       if (next) {
         event.preventDefault();
