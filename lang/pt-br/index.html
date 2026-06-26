@@ -13,7 +13,7 @@
     <link rel="alternate" hreflang="pt-BR" href="https://paladini.github.io/generative-engine-optimization-basic-guide/lang/pt-br/">
     <link rel="alternate" hreflang="x-default" href="https://paladini.github.io/generative-engine-optimization-basic-guide/">
     <link rel="icon" href="../../assets/images/geo-mark.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../../assets/css/site.css?v=20260625a">
+    <link rel="stylesheet" href="../../assets/css/site.css?v=20260626a">
 
     <meta name="DC.Title" content="GEO Basics: Guia de Otimização para Motores Generativos">
     <meta name="DC.Creator" content="Fernando Paladini">
@@ -129,7 +129,7 @@
                 "name": "Devo criar um arquivo llms.txt?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Você pode criar llms.txt para ferramentas que optam por lê-lo, mas o Google afirma que ele não é usado na Busca Google nem em seus recursos generativos de busca. Trate como opcional, não como etapa obrigatória de GEO."
+                  "text": "Sim, se suas páginas importantes já são rastreáveis, canônicas, úteis e atuais. Um arquivo llms.txt na raiz pode oferecer aos agentes de IA um guia conciso para os melhores recursos públicos do site, mas ele é opcional e não garante posições, tráfego ou citações."
                 }
               },
               {
@@ -161,8 +161,8 @@
           <a href="#systems">Como a IA responde</a>
           <a href="#apply">Aplicar</a>
           <a href="#examples">Exemplos</a>
-          <a href="#faq">FAQ</a>
           <a href="#measure">Medir</a>
+          <a href="#faq">FAQ</a>
           <a href="#sources">Fontes</a>
           <a class="language-switch" href="../../index.html" hreflang="en" aria-label="Ler em inglês" title="Ler em inglês">
             <span class="language-switch__label" lang="en" aria-hidden="true">EN</span>
@@ -183,21 +183,12 @@
             encontrá-lo, entendê-lo, confiar nele e citá-lo. Ele não substitui o SEO; amplia o SEO para o
             contexto das respostas geradas por IA.
           </p>
-          <div class="answer-block" aria-label="Resposta curta">
-            <strong>Resposta curta:</strong>
-            <p>
-              Otimização para Motores Generativos (GEO) ajuda uma página da web a ser mais fácil de recuperar,
-              interpretar, avaliar e citar por sistemas de busca com IA. Este guia explica fundamentos de SEO,
-              estrutura de conteúdo, marcação Schema.org, controles de crawler, sinais de fonte e hábitos de
-              medição que tornam o conteúdo mais útil para pessoas e mais legível para motores de resposta.
-            </p>
-          </div>
           <nav class="reading-path" aria-label="Caminho recomendado de leitura">
             <span>Comece por aqui:</span>
             <a href="#what">definição</a>
             <a href="#apply">otimização da página</a>
-            <a href="#faq">FAQ</a>
             <a href="#measure">medição</a>
+            <a href="#faq">FAQ</a>
           </nav>
           <div class="hero__actions">
             <a class="button button--primary" href="#what">Começar o guia</a>
@@ -205,36 +196,17 @@
           </div>
         </div>
 
-        <div class="hero__visual" aria-label="Mapa simplificado de GEO">
-          <div class="answer-map">
-            <div class="answer-map__row">
-              <div class="answer-map__node">
-                <strong>1. Pessoa pergunta</strong>
-                <span>Alguém digita uma dúvida real, com palavras do dia a dia.</span>
-              </div>
-              <span class="answer-map__arrow">depois</span>
-              <div class="answer-map__node">
-                <strong>2. A IA procura fontes</strong>
-                <span>O sistema busca páginas que podem ajudar a responder.</span>
-              </div>
-            </div>
-            <div class="answer-map__row">
-              <div class="answer-map__node">
-                <strong>3. Ela confere provas</strong>
-                <span>Páginas claras, dados, exemplos e contexto especializado são mais fáceis de usar.</span>
-              </div>
-              <span class="answer-map__arrow">depois</span>
-              <div class="answer-map__node">
-                <strong>4. Ela responde</strong>
-                <span>A IA monta um resumo e pode indicar as fontes de apoio.</span>
-              </div>
-            </div>
-            <div class="answer-map__wide">
-              <strong>Seu trabalho em GEO</strong>
-              <span>Escrever páginas que respondem dúvidas reais com clareza, mostram as provas e deixam a fonte fácil de verificar.</span>
-            </div>
-          </div>
-          <p class="hero__note">Use as setas do teclado para avançar pelas seções do guia.</p>
+        <div class="hero__visual hero__answer-card" aria-label="Resposta curta">
+          <strong>Resposta curta:</strong>
+          <p>
+            Otimização para Motores Generativos (GEO) ajuda uma página da web a ser mais fácil de recuperar,
+            interpretar, avaliar e citar por sistemas de busca com IA.
+          </p>
+          <p>
+            Este guia explica fundamentos de SEO, estrutura de conteúdo, marcação Schema.org, controles de
+            crawler, sinais de fonte e hábitos de medição que tornam o conteúdo mais útil para pessoas e mais
+            legível para motores de resposta.
+          </p>
         </div>
       </div>
     </section>
@@ -423,7 +395,7 @@
             <h2>Trechos curtos que você pode reutilizar</h2>
             <p class="lead">
               Estes exemplos não são tags mágicas. São modelos de publicação clara: metadados,
-              dados estruturados, controles de crawler e estrutura de artigo.
+              dados estruturados, controles de crawler, guias opcionais legíveis por LLMs e estrutura de artigo.
             </p>
           </div>
 
@@ -484,6 +456,35 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
           </article>
 
           <article class="card">
+            <h3>llms.txt como guia opcional do site</h3>
+            <p>
+              Um arquivo <code>llms.txt</code> na raiz é uma convenção proposta em Markdown para ferramentas que optam por lê-lo.
+              Use para resumir o site e apontar agentes para recursos canônicos e úteis. Ele não bloqueia crawlers,
+              não substitui o sitemap e não garante posições nem citações por IA.
+            </p>
+            <p>
+              Pense nos papéis assim: <code>robots.txt</code> orienta acesso de crawlers, <code>sitemap.xml</code>
+              lista URLs canônicas, dados estruturados descrevem o significado do conteúdo visível na página e
+              <code>llms.txt</code> oferece uma visão curada para LLMs e agentes.
+            </p>
+            <div class="snippet snippet--compact">
+              <div class="snippet__top">
+                <span>Exemplo de llms.txt</span>
+                <button class="copy-button" data-copy="#snippet-llms" data-copied="Copiado" data-failed="Selecione">Copiar</button>
+              </div>
+              <pre><code id="snippet-llms"># Site de exemplo
+&gt; Guia prático sobre [tópico], com fontes.
+## Páginas principais
+- [Comece aqui](https://example.com/): Guia principal e definições.
+- [FAQ](https://example.com/faq/): Perguntas comuns.
+- [Fontes](https://example.com/sources/): Referências primárias.
+## Arquivos técnicos
+- [Sitemap](https://example.com/sitemap.xml)
+- [Robots](https://example.com/robots.txt)</code></pre>
+            </div>
+          </article>
+
+          <article class="card">
             <h3>Estrutura de artigo citável</h3>
             <p>Deixe a resposta útil fácil de citar; depois entregue prova e contexto para o leitor.</p>
             <div class="snippet">
@@ -536,45 +537,10 @@ Próximo passo: o que o leitor deve fazer agora.</code></pre>
 
           <div class="callout">
             <p>
-              Sobre `llms.txt`: ele pode ser útil para ferramentas específicas que optam por lê-lo, mas o Google afirma
-              que não o usa na Busca Google nem em seus recursos generativos. Não trate isso como passo obrigatório de GEO.
+              Sobre <code>llms.txt</code>: ele é útil o bastante para ser explicado e, em muitos sites, barato o bastante para ser adicionado.
+              Ainda assim, o Google afirma que ele não é obrigatório para a Busca Google nem para seus recursos generativos.
+              Trate como trabalho opcional de preparação para agentes, não como etapa obrigatória de GEO nem garantia de citação.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="faq">
-        <div class="section__inner">
-          <div class="section__header">
-            <span class="section__number">07. FAQ</span>
-            <h2>Perguntas frequentes sobre GEO</h2>
-            <p class="lead">
-              Respostas curtas para quem está comparando GEO, SEO, visibilidade em busca com IA,
-              dados estruturados, controles de crawler e medição de citações.
-            </p>
-          </div>
-
-          <div class="faq-list">
-            <article class="faq-item">
-              <h3>GEO é a mesma coisa que SEO?</h3>
-              <p>Não. SEO continua sendo a base para conteúdo rastreável, útil e indexável. GEO amplia o SEO ao focar em como sistemas de resposta por IA recuperam, avaliam, resumem e citam páginas da web.</p>
-            </article>
-            <article class="faq-item">
-              <h3>GEO pode garantir citações por IA?</h3>
-              <p>Não. GEO pode melhorar clareza, rastreabilidade, utilidade e prontidão para citação, mas nenhum publicador consegue obrigar ChatGPT, Google AI Overviews, Bing Copilot, Perplexity ou outro sistema de IA a citar uma página.</p>
-            </article>
-            <article class="faq-item">
-              <h3>Dados estruturados garantem visibilidade em IA?</h3>
-              <p>Não. Dados estruturados podem ajudar mecanismos de busca a entender conteúdo visível, mas não existe marcação Schema.org especial que garanta visibilidade em IA generativa.</p>
-            </article>
-            <article class="faq-item">
-              <h3>Devo criar um arquivo <code>llms.txt</code>?</h3>
-              <p>Você pode criar <code>llms.txt</code> para ferramentas que optam por lê-lo, mas o Google afirma que ele não é usado na Busca Google nem em seus recursos generativos de busca. Trate como opcional, não como etapa obrigatória de GEO.</p>
-            </article>
-            <article class="faq-item">
-              <h3>Quais crawlers importam para busca com IA?</h3>
-              <p>Para recursos de IA do Google, rastreamento normal da Busca Google e controles de snippet importam. Na OpenAI, <code>OAI-SearchBot</code> é usado para busca, enquanto <code>GPTBot</code> está associado a controles de treinamento. Cada plataforma documenta suas próprias regras de crawler.</p>
-            </article>
           </div>
         </div>
       </section>
@@ -582,7 +548,7 @@ Próximo passo: o que o leitor deve fazer agora.</code></pre>
       <section class="section" id="measure">
         <div class="section__inner">
           <div class="section__header">
-            <span class="section__number">08. Ciclo de melhoria</span>
+            <span class="section__number">07. Ciclo de melhoria</span>
             <h2>Como medir visibilidade em GEO</h2>
             <p class="lead">
               A medição de GEO ainda está amadurecendo. Comece com sinais observáveis: rastreabilidade,
@@ -610,6 +576,42 @@ Próximo passo: o que o leitor deve fazer agora.</code></pre>
             <article class="card">
               <h3>Testes manuais de prompts</h3>
               <p>Acompanhe um conjunto pequeno de perguntas realistas. Registre se seu conteúdo é citado, quem aparece como fonte e qual formato a resposta prefere.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="section__inner">
+          <div class="section__header">
+            <span class="section__number">08. FAQ</span>
+            <h2>Perguntas frequentes sobre GEO</h2>
+            <p class="lead">
+              Respostas curtas para quem está comparando GEO, SEO, visibilidade em busca com IA,
+              dados estruturados, controles de crawler e medição de citações.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <article class="faq-item">
+              <h3>GEO é a mesma coisa que SEO?</h3>
+              <p>Não. SEO continua sendo a base para conteúdo rastreável, útil e indexável. GEO amplia o SEO ao focar em como sistemas de resposta por IA recuperam, avaliam, resumem e citam páginas da web.</p>
+            </article>
+            <article class="faq-item">
+              <h3>GEO pode garantir citações por IA?</h3>
+              <p>Não. GEO pode melhorar clareza, rastreabilidade, utilidade e prontidão para citação, mas nenhum publicador consegue obrigar ChatGPT, Google AI Overviews, Bing Copilot, Perplexity ou outro sistema de IA a citar uma página.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Dados estruturados garantem visibilidade em IA?</h3>
+              <p>Não. Dados estruturados podem ajudar mecanismos de busca a entender conteúdo visível, mas não existe marcação Schema.org especial que garanta visibilidade em IA generativa.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Devo criar um arquivo <code>llms.txt</code>?</h3>
+              <p>Sim, se suas páginas importantes já são rastreáveis, canônicas, úteis e atuais. Um arquivo <code>llms.txt</code> na raiz pode oferecer aos agentes de IA um guia conciso para os melhores recursos públicos do site, mas ele é opcional e não garante posições, tráfego ou citações.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Quais crawlers importam para busca com IA?</h3>
+              <p>Para recursos de IA do Google, rastreamento normal da Busca Google e controles de snippet importam. Na OpenAI, <code>OAI-SearchBot</code> é usado para busca, enquanto <code>GPTBot</code> está associado a controles de treinamento. Cada plataforma documenta suas próprias regras de crawler.</p>
             </article>
           </div>
         </div>
@@ -651,6 +653,14 @@ Próximo passo: o que o leitor deve fazer agora.</code></pre>
               <span>Documenta user agents e controles de crawler para casos de busca e treinamento.</span>
             </article>
             <article class="source">
+              <a href="https://llmstxt.org/" target="_blank" rel="noopener">Proposta do arquivo /llms.txt</a>
+              <span>Define a convenção proposta em Markdown para oferecer a LLMs e agentes um guia conciso dos recursos importantes de um site.</span>
+            </article>
+            <article class="source">
+              <a href="https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt" target="_blank" rel="noopener">Chrome Developers: auditoria llms.txt no Lighthouse</a>
+              <span>Descreve <code>llms.txt</code> como convenção emergente e opcional para preparação de sites para navegação por agentes.</span>
+            </article>
+            <article class="source">
               <a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" target="_blank" rel="noopener">Google Search Central: introdução a dados estruturados</a>
               <span>Explica como dados estruturados oferecem pistas explícitas sobre o significado da página.</span>
             </article>
@@ -678,6 +688,6 @@ Próximo passo: o que o leitor deve fazer agora.</code></pre>
       </div>
     </footer>
 
-    <script src="../../assets/js/site.js?v=20260625a" defer></script>
+    <script src="../../assets/js/site.js?v=20260626a" defer></script>
   </body>
 </html>

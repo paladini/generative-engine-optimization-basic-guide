@@ -1,0 +1,32 @@
+# GEO Basics
+
+> GEO Basics is a free, open-source, bilingual beginner guide to Generative Engine Optimization (GEO): the practice of making web content easier for AI answer systems to discover, understand, trust, and cite.
+
+GEO Basics is a static educational site maintained by Fernando Paladini. It explains GEO without promising rankings, traffic, AI citations, or guaranteed visibility in generative search systems.
+
+## Guides
+
+- [English guide](https://paladini.github.io/generative-engine-optimization-basic-guide/): Canonical English beginner guide to GEO.
+- [Brazilian Portuguese guide](https://paladini.github.io/generative-engine-optimization-basic-guide/lang/pt-br/): Aligned pt-BR translation of the GEO Basics guide.
+
+## Project resources
+
+- [Repository](https://github.com/paladini/generative-engine-optimization-basic-guide): Source code and static site files.
+- [README](https://github.com/paladini/generative-engine-optimization-basic-guide/blob/main/README.md): Project overview, local usage, and contribution context.
+- [Contributing guide](https://github.com/paladini/generative-engine-optimization-basic-guide/blob/main/CONTRIBUTING.md): Editorial, translation, source, validation, and pull request guidance.
+- [Sitemap](https://paladini.github.io/generative-engine-optimization-basic-guide/sitemap.xml): Canonical public URLs for the published guide.
+
+## Primary references
+
+- [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features): Google guidance for AI Overviews, AI Mode, crawling, snippets, and inclusion.
+- [Google Search Central: optimizing for generative AI features](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide): Google's guidance on applying foundational SEO to generative AI search.
+- [OpenAI Developers: crawler overview](https://developers.openai.com/api/docs/bots): OpenAI user agents and crawler controls for search and training use cases.
+- [Schema.org](https://schema.org/): Shared structured data vocabulary.
+- [The /llms.txt file proposal](https://llmstxt.org/): Proposed Markdown convention for helping LLMs and agents understand important website resources.
+
+## Notes for AI tools
+
+- Treat `llms.txt` as an optional site guide, not as a crawler permission file.
+- Use `robots.txt` and platform crawler documentation for access-control guidance.
+- Use `sitemap.xml` for canonical URL discovery.
+- Verify platform-specific claims in the primary sources above before giving SEO or GEO advice.

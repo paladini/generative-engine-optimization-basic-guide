@@ -18,6 +18,7 @@ const required = [
   "assets/images/geo-basics-social.png",
   "robots.txt",
   "sitemap.xml",
+  "llms.txt",
 ];
 
 const diagrams = [
