@@ -20,7 +20,7 @@
     <meta name="DC.Subject" content="Otimização para Motores Generativos">
     <meta name="DC.Description" content="Guia introdutório sobre GEO, busca com IA, conteúdo citável, dados estruturados, crawlers e medição.">
     <meta name="DC.Publisher" content="Fernando Paladini">
-    <meta name="DC.Date" content="2026-06-25">
+    <meta name="DC.Date" content="2026-06-26">
     <meta name="DC.Type" content="Text">
     <meta name="DC.Format" content="text/html">
     <meta name="DC.Identifier" content="https://paladini.github.io/generative-engine-optimization-basic-guide/lang/pt-br/">
@@ -60,7 +60,7 @@
               }
             },
             "datePublished": "2026-06-24",
-            "dateModified": "2026-06-25",
+            "dateModified": "2026-06-26",
             "inLanguage": "pt-BR",
             "mainEntityOfPage": "https://paladini.github.io/generative-engine-optimization-basic-guide/lang/pt-br/",
             "url": "https://paladini.github.io/generative-engine-optimization-basic-guide/lang/pt-br/",
@@ -551,33 +551,51 @@ Próximo passo: o que o leitor deve fazer agora.</code></pre>
             <span class="section__number">07. Ciclo de melhoria</span>
             <h2>Como medir visibilidade em GEO</h2>
             <p class="lead">
-              A medição de GEO ainda está amadurecendo. Comece com sinais observáveis: rastreabilidade,
-              páginas indexadas, citações quando disponíveis, testes manuais de prompts, logs e atualizações de conteúdo.
+              A medição de GEO ainda está amadurecendo, mas você pode checar sinais reais:
+              acesso de crawlers, indexação, dados estruturados, relatórios de recursos de IA,
+              citações quando as plataformas mostram esse dado, logs e prompts repetíveis.
             </p>
           </div>
 
-          <figure class="diagram">
-            <img src="../../assets/diagrams/geo-content-loop.svg" alt="Ciclo de perguntas de pesquisa, publicação de conteúdo, observação de citações, melhoria de evidências e atualização de páginas.">
-            <figcaption class="caption">
-              GEO é um ciclo. Pesquise perguntas, publique páginas úteis, observe onde seu conteúdo é citado ou ignorado
-              e melhore a página com respostas mais claras e evidências mais fortes.
-            </figcaption>
-          </figure>
+          <div class="callout">
+            <p>Nenhum verificador garante posições, tráfego, citações no ChatGPT, citações no Perplexity ou inclusão no Google AI Overview. Use estas ferramentas para encontrar evidências e corrigir problemas concretos.</p>
+          </div>
 
-          <div class="grid grid--3">
+          <div class="grid grid--2">
             <article class="card">
-              <h3>Search Console</h3>
-              <p>Use para indexação, rastreamento, consultas e desempenho de páginas. O Google também anunciou em junho de 2026 testes de controles e relatórios de IA generativa, com impressões, páginas, países, dispositivos e datas para um subconjunto de sites.</p>
+              <h3>Linting GEO open-source</h3>
+              <p>Comece pelo <a href="https://ijonis.com/en/ai-visibility-checker" target="_blank" rel="noopener">IJONIS AI Visibility Checker</a>, uma varredura gratuita e direcional apoiada pelo <a href="https://github.com/IJONIS/geo-lint" target="_blank" rel="noopener">IJONIS/geo-lint</a>. Use para investigar estrutura da página, títulos em formato de pergunta, schema, qualidade do conteúdo e problemas de prontidão para citação que você pode corrigir.</p>
             </article>
             <article class="card">
-              <h3>Bing AI Performance</h3>
-              <p>A prévia do Bing de 2026 mostra citações, páginas citadas, grounding queries, tendências e dimensões mais novas de visibilidade em IA: Intents, Topics, Citation Share e Compare.</p>
+              <h3>Checagens oficiais do Google</h3>
+              <p>Use o <a href="https://search.google.com/search-console/about" target="_blank" rel="noopener">Google Search Console</a> e a <a href="https://support.google.com/webmasters/answer/9012289" target="_blank" rel="noopener">Inspeção de URL</a> para rastreamento, indexação, consultas, sitemap e status de páginas. Quando disponível, consulte os <a href="https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports" target="_blank" rel="noopener">relatórios de desempenho em IA generativa</a> para impressões, páginas, países, dispositivos e datas.</p>
             </article>
             <article class="card">
-              <h3>Testes manuais de prompts</h3>
-              <p>Acompanhe um conjunto pequeno de perguntas realistas. Registre se seu conteúdo é citado, quem aparece como fonte e qual formato a resposta prefere.</p>
+              <h3>Checagens oficiais do Bing</h3>
+              <p>Use o <a href="https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview" target="_blank" rel="noopener">Bing AI Performance</a> e o <a href="https://blogs.bing.com/search/June-2026/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare" target="_blank" rel="noopener">AI Visibility Insights</a> para citações, páginas citadas, grounding queries, tendências, Intents, Topics, Citation Share e Compare. Combine isso com a <a href="https://www.bing.com/webmasters/help/url-inspection-55a30305" target="_blank" rel="noopener">Inspeção de URL do Bing</a> e o <a href="https://www.bing.com/indexnow" target="_blank" rel="noopener">IndexNow</a>.</p>
+            </article>
+            <article class="card">
+              <h3>Schema, velocidade e prontidão para agentes</h3>
+              <p>Rode o <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener">Teste de pesquisa aprimorada</a>, o <a href="https://validator.schema.org/" target="_blank" rel="noopener">Schema Markup Validator</a>, o <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">PageSpeed Insights</a> e o <a href="https://developer.chrome.com/docs/lighthouse/overview" target="_blank" rel="noopener">Lighthouse</a>. O Lighthouse também tem uma <a href="https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt" target="_blank" rel="noopener">auditoria experimental de llms.txt</a> para prontidão de navegação por agentes.</p>
+            </article>
+            <article class="card">
+              <h3>Acesso de crawlers e logs</h3>
+              <p>Verifique se seu <code>robots.txt</code>, WAF, CDN e logs do servidor permitem os crawlers que importam para você. Use a <a href="https://developers.openai.com/api/docs/bots" target="_blank" rel="noopener">documentação de crawlers da OpenAI</a>, a <a href="https://docs.perplexity.ai/docs/resources/perplexity-crawlers" target="_blank" rel="noopener">documentação de crawlers do Perplexity</a> e um analisador open-source de logs como o <a href="https://goaccess.io/" target="_blank" rel="noopener">GoAccess</a>.</p>
+            </article>
+            <article class="card">
+              <h3>Monitoramento repetível por prompts</h3>
+              <p>Para checagens avançadas, use ferramentas open-source como o <a href="https://github.com/aryamantodkar/oneglanse" target="_blank" rel="noopener">OneGlanse</a> para acompanhar respostas reais em produtos de IA, ou o <a href="https://github.com/promptfoo/promptfoo" target="_blank" rel="noopener">promptfoo</a> para executar testes repetíveis de prompts. Registre se sua marca ou URL aparece, se concorrentes são citados e quais fontes os sistemas de resposta preferem.</p>
             </article>
           </div>
+
+          <ul class="checklist" aria-label="Checklist de medição de GEO">
+            <li>Inspecione URLs prioritárias no Google Search Console e no Bing Webmaster Tools.</li>
+            <li>Valide dados estruturados e confirme que eles combinam com o conteúdo visível da página.</li>
+            <li>Rastreie o site com um crawler de SEO como o <a href="https://github.com/janreges/siteone-crawler" target="_blank" rel="noopener">SiteOne Crawler</a> para encontrar links quebrados, metadados ausentes, redirecionamentos e páginas fracas.</li>
+            <li>Revise logs do servidor para confirmar acesso de crawlers de busca e IA em vez de adivinhar.</li>
+            <li>Rode o mesmo conjunto de prompts toda semana e registre citações, menções, concorrentes e padrões de fontes.</li>
+            <li>Trate cada pontuação como sinal de diagnóstico, não como prova de que um sistema de IA vai citar você.</li>
+          </ul>
         </div>
       </section>
 
@@ -671,10 +689,6 @@ Próximo passo: o que o leitor deve fazer agora.</code></pre>
             <article class="source">
               <a href="https://arxiv.org/abs/2311.09735" target="_blank" rel="noopener">GEO: Generative Engine Optimization</a>
               <span>O artigo de pesquisa original que nomeou GEO e estudou visibilidade em motores generativos.</span>
-            </article>
-            <article class="source">
-              <a href="https://ijonis.com/en/ai-visibility-checker" target="_blank" rel="noopener">IJONIS AI Visibility Checker</a>
-              <span>Um verificador gratuito e direcional de GEO, apoiado pelo projeto open-source <a href="https://github.com/IJONIS/geo-lint" target="_blank" rel="noopener">IJONIS/geo-lint</a>. Use para investigar estrutura da página e sinais de prontidão para citação, não como garantia de citações.</span>
             </article>
           </div>
         </div>
