@@ -88,7 +88,8 @@ The guide teaches the core GEO workflow:
 - **SEO-ready structure:** canonical URLs, hreflang links, sitemap, robots
   file, metadata, and JSON-LD.
 - **LLM-friendly writing:** direct answers, compact summaries, definitions,
-  examples, source lists, and plain section names.
+  examples, source lists, plain section names, and an optional `llms.txt`
+  site guide.
 - **Visual learning:** Mermaid diagram sources and committed SVG renders.
 - **Accessible basics:** semantic HTML, skip link, alt text, and readable
   navigation.
@@ -112,6 +113,7 @@ The guide teaches the core GEO workflow:
 |-- scripts/validate-site.mjs        # Static validation script
 |-- robots.txt                       # Crawler access and sitemap pointer
 |-- sitemap.xml                      # Canonical URLs and hreflang alternates
+|-- llms.txt                         # Optional LLM-readable site guide
 |-- CONTRIBUTING.md                  # Contribution guide
 |-- LICENSE                          # MIT license
 `-- README.md                        # Project overview
@@ -177,6 +179,7 @@ If the repository name or publishing domain changes, update these files:
 - `lang/pt-br/index.html`
 - `robots.txt`
 - `sitemap.xml`
+- `llms.txt`
 
 ## How GEO Basics is optimized for search and LLMs
 
@@ -191,6 +194,8 @@ trick. The guide follows these principles:
 - Use source-backed explanations and link to primary references.
 - Add structured data only when it matches the visible page.
 - Use bilingual `hreflang` alternates for the English and pt-BR versions.
+- Use `llms.txt` as an optional curated guide for AI agents and LLM-assisted
+  documentation workflows.
 - Keep summaries, tables, checklists, and examples easy to extract.
 - Avoid claims that sound precise but cannot be verified.
 - Refresh time-sensitive guidance when platforms change their documentation.
@@ -228,10 +233,11 @@ used to describe content that readers cannot see.
 
 ### Should every site add `llms.txt`?
 
-`llms.txt` is an emerging convention, not a universal requirement. It can help
-some AI agents understand a site's most important pages, but adoption varies.
-GEO Basics treats it as optional and secondary to crawlable, useful, well
-structured public content.
+`llms.txt` is an emerging convention, not a universal requirement. It can give
+AI agents a concise guide to a site's most important public resources, but it
+does not control crawling, replace a sitemap, guarantee rankings, or guarantee
+AI citations. GEO Basics treats it as optional and secondary to crawlable,
+useful, well structured public content.
 
 ### Why is this project open source?
 
@@ -255,7 +261,6 @@ request.
 
 ## Roadmap ideas
 
-- Add a compact `llms.txt` file for tools that support the convention.
 - Add more before-and-after examples for GEO-ready pages.
 - Add a glossary of GEO, SEO, retrieval, citation, and structured data terms.
 - Add more language versions.

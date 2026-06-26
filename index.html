@@ -128,7 +128,7 @@
                 "name": "Should I create an llms.txt file?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "You can create llms.txt for tools that choose to read it, but Google says it is not used for Google Search or its generative AI search features. Treat it as optional, not as a required GEO step."
+                  "text": "Yes, if your important pages are already crawlable, canonical, useful, and current. A root llms.txt file can give AI agents a concise guide to your best public resources, but it is optional and does not guarantee rankings, traffic, or citations."
                 }
               },
               {
@@ -421,7 +421,7 @@
             <h2>Small snippets you can reuse</h2>
             <p class="lead">
               These are not magic tags. They are examples of clear publishing: metadata, structured data,
-              crawler controls, and article shape.
+              crawler controls, optional LLM-readable site guides, and article shape.
             </p>
           </div>
 
@@ -482,6 +482,40 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
           </article>
 
           <article class="card">
+            <h3><code>llms.txt</code> as an optional site guide</h3>
+            <p>
+              A root <code>llms.txt</code> file is a proposed Markdown convention for tools that choose to read it.
+              Use it to summarize your site and point agents to canonical, useful resources. It does not block crawlers,
+              replace a sitemap, or guarantee rankings and AI citations.
+            </p>
+            <p>
+              Think of the roles this way: <code>robots.txt</code> gives crawler access guidance, <code>sitemap.xml</code>
+              lists canonical URLs, structured data describes visible page meaning, and <code>llms.txt</code> gives a curated
+              overview for LLMs and agents.
+            </p>
+            <div class="snippet">
+              <div class="snippet__top">
+                <span>llms.txt example</span>
+                <button class="copy-button" data-copy="#snippet-llms" data-copied="Copied" data-failed="Select">Copy</button>
+              </div>
+              <pre><code id="snippet-llms"># Example Site
+
+&gt; A beginner-friendly guide to [topic], with practical examples and source-backed explanations.
+
+## Key pages
+
+- [Start here](https://example.com/): Main guide and definitions.
+- [FAQ](https://example.com/faq/): Short answers to common questions.
+- [Research sources](https://example.com/sources/): Primary references and methodology.
+
+## Technical files
+
+- [Sitemap](https://example.com/sitemap.xml): Canonical public URLs.
+- [Robots rules](https://example.com/robots.txt): Crawler access guidance.</code></pre>
+            </div>
+          </article>
+
+          <article class="card">
             <h3>A quotable article structure</h3>
             <p>Make the useful answer easy to quote, then give the reader proof and context.</p>
             <div class="snippet">
@@ -534,8 +568,9 @@ Next step: what the reader should do now.</code></pre>
 
           <div class="callout">
             <p>
-              About `llms.txt`: it may be useful for specific tools that choose to read it, but Google says it is not used for Google Search
-              or its generative AI search features. Do not treat it as a required GEO step.
+              About <code>llms.txt</code>: it is useful enough to document and, for many sites, cheap enough to add.
+              Still, Google says it is not required for Google Search or its generative AI search features. Treat it as
+              optional agent-readiness work, not as a required GEO step or citation guarantee.
             </p>
           </div>
         </div>
@@ -567,7 +602,7 @@ Next step: what the reader should do now.</code></pre>
             </article>
             <article class="faq-item">
               <h3>Should I create an <code>llms.txt</code> file?</h3>
-              <p>You can create <code>llms.txt</code> for tools that choose to read it, but Google says it is not used for Google Search or its generative AI search features. Treat it as optional, not as a required GEO step.</p>
+              <p>Yes, if your important pages are already crawlable, canonical, useful, and current. A root <code>llms.txt</code> file can give AI agents a concise guide to your best public resources, but it is optional and does not guarantee rankings, traffic, or citations.</p>
             </article>
             <article class="faq-item">
               <h3>Which crawlers matter for AI search?</h3>
@@ -647,6 +682,14 @@ Next step: what the reader should do now.</code></pre>
             <article class="source">
               <a href="https://developers.openai.com/api/docs/bots" target="_blank" rel="noopener">OpenAI Developers: crawler overview</a>
               <span>Documents OpenAI user agents and crawler controls for search and training use cases.</span>
+            </article>
+            <article class="source">
+              <a href="https://llmstxt.org/" target="_blank" rel="noopener">The /llms.txt file proposal</a>
+              <span>Defines the proposed Markdown convention for giving LLMs and agents a concise guide to important website resources.</span>
+            </article>
+            <article class="source">
+              <a href="https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt" target="_blank" rel="noopener">Chrome Developers: Lighthouse llms.txt audit</a>
+              <span>Describes <code>llms.txt</code> as an optional emerging convention for agentic browsing readiness.</span>
             </article>
             <article class="source">
               <a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" target="_blank" rel="noopener">Google Search Central: structured data intro</a>
