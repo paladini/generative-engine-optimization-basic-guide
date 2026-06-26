@@ -202,9 +202,9 @@ select {
 
 .hero h1 {
   margin: 0;
-  max-width: 10ch;
-  font-size: clamp(3.2rem, 8vw, 7.4rem);
-  line-height: 0.95;
+  max-width: 13ch;
+  font-size: clamp(2.75rem, 6.4vw, 5.9rem);
+  line-height: 0.98;
   letter-spacing: 0;
 }
 
@@ -222,6 +222,54 @@ select {
   max-width: 40rem;
   color: var(--muted);
   font-size: 1.12rem;
+}
+
+.answer-block {
+  margin-top: 1.2rem;
+  max-width: 43rem;
+  border: 1px solid #b7ded9;
+  border-left: 5px solid var(--teal);
+  border-radius: var(--radius);
+  background: var(--surface-strong);
+  padding: 0.9rem 1rem;
+}
+
+.answer-block strong {
+  color: var(--ink);
+}
+
+.answer-block p {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+}
+
+.reading-path {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.reading-path span {
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.reading-path a {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #ffffff;
+  color: var(--indigo);
+  padding: 0.25rem 0.45rem;
+  text-decoration: none;
+}
+
+.reading-path a:hover {
+  border-color: var(--teal);
+  color: var(--teal);
 }
 
 .hero__actions {
@@ -567,6 +615,24 @@ pre code {
   display: grid;
   gap: 0.85rem;
   margin-top: 1.4rem;
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1.4rem;
+}
+
+.faq-item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 1rem;
+}
+
+.faq-item p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
 }
 
 .source {
