@@ -20,7 +20,7 @@
     <meta name="DC.Subject" content="Generative Engine Optimization">
     <meta name="DC.Description" content="Beginner guide to GEO, AI search visibility, citation-ready content, structured data, crawler controls, and measurement.">
     <meta name="DC.Publisher" content="Fernando Paladini">
-    <meta name="DC.Date" content="2026-06-25">
+    <meta name="DC.Date" content="2026-06-26">
     <meta name="DC.Type" content="Text">
     <meta name="DC.Format" content="text/html">
     <meta name="DC.Identifier" content="https://paladini.github.io/generative-engine-optimization-basic-guide/">
@@ -60,7 +60,7 @@
               }
             },
             "datePublished": "2026-06-24",
-            "dateModified": "2026-06-25",
+            "dateModified": "2026-06-26",
             "inLanguage": "en",
             "mainEntityOfPage": "https://paladini.github.io/generative-engine-optimization-basic-guide/",
             "url": "https://paladini.github.io/generative-engine-optimization-basic-guide/",
@@ -549,33 +549,50 @@ Next step: what the reader should do now.</code></pre>
             <span class="section__number">07. Improvement loop</span>
             <h2>How to measure GEO visibility</h2>
             <p class="lead">
-              GEO measurement is still immature. Start with signals you can actually observe: crawlability,
-              indexed pages, citations where available, prompt checks, logs, and content updates.
+              GEO measurement is still immature, but you can check real signals: crawl access, indexing,
+              structured data, AI feature reports, citations where platforms expose them, logs, and repeatable prompts.
             </p>
           </div>
 
-          <figure class="diagram">
-            <img src="assets/diagrams/geo-content-loop.svg" alt="Loop from research prompts to publish content, observe citations, improve evidence, and refresh pages.">
-            <figcaption class="caption">
-              GEO is a loop. Research the questions, publish useful pages, observe where you are cited or ignored,
-              and improve the page with clearer answers and stronger evidence.
-            </figcaption>
-          </figure>
+          <div class="callout">
+            <p>No checker can guarantee rankings, traffic, ChatGPT citations, Perplexity citations, or Google AI Overview inclusion. Use these tools to find evidence and fix concrete problems.</p>
+          </div>
 
-          <div class="grid grid--3">
+          <div class="grid grid--2">
             <article class="card">
-              <h3>Search Console</h3>
-              <p>Use it for indexing, crawl, query, and page performance. Google also announced June 2026 testing for generative AI controls and performance reports, with impressions, pages, countries, devices, and dates for a subset of sites.</p>
+              <h3>Open-source GEO linting</h3>
+              <p>Start with <a href="https://ijonis.com/en/ai-visibility-checker" target="_blank" rel="noopener">IJONIS AI Visibility Checker</a>, a free directional scan backed by <a href="https://github.com/IJONIS/geo-lint" target="_blank" rel="noopener">IJONIS/geo-lint</a>. Use it to inspect page structure, question headings, schema, content quality, and citation-readiness issues you can fix.</p>
             </article>
             <article class="card">
-              <h3>Bing AI Performance</h3>
-              <p>Bing's 2026 preview reports citations, cited pages, grounding queries, citation trends, and newer AI visibility dimensions: Intents, Topics, Citation Share, and Compare.</p>
+              <h3>Official Google checks</h3>
+              <p>Use <a href="https://search.google.com/search-console/about" target="_blank" rel="noopener">Google Search Console</a> and <a href="https://support.google.com/webmasters/answer/9012289" target="_blank" rel="noopener">URL Inspection</a> for crawl, index, query, sitemap, and page status. Where available, check <a href="https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports" target="_blank" rel="noopener">Generative AI performance reports</a> for impressions, pages, countries, devices, and dates.</p>
             </article>
             <article class="card">
-              <h3>Manual prompt checks</h3>
-              <p>Track a small set of realistic questions. Record whether you are cited, who is cited, and what format the answer prefers.</p>
+              <h3>Official Bing checks</h3>
+              <p>Use <a href="https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview" target="_blank" rel="noopener">Bing AI Performance</a> and <a href="https://blogs.bing.com/search/June-2026/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare" target="_blank" rel="noopener">AI Visibility Insights</a> for citations, cited pages, grounding queries, trends, Intents, Topics, Citation Share, and Compare. Pair that with <a href="https://www.bing.com/webmasters/help/url-inspection-55a30305" target="_blank" rel="noopener">Bing URL Inspection</a> and <a href="https://www.bing.com/indexnow" target="_blank" rel="noopener">IndexNow</a>.</p>
+            </article>
+            <article class="card">
+              <h3>Schema, speed, and agent readiness</h3>
+              <p>Run the <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener">Rich Results Test</a>, <a href="https://validator.schema.org/" target="_blank" rel="noopener">Schema Markup Validator</a>, <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">PageSpeed Insights</a>, and <a href="https://developer.chrome.com/docs/lighthouse/overview" target="_blank" rel="noopener">Lighthouse</a>. Lighthouse also has an experimental <a href="https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt" target="_blank" rel="noopener">llms.txt audit</a> for agentic browsing readiness.</p>
+            </article>
+            <article class="card">
+              <h3>Crawler access and logs</h3>
+              <p>Check whether your <code>robots.txt</code>, WAF, CDN, and server logs allow the crawlers you care about. Use the <a href="https://developers.openai.com/api/docs/bots" target="_blank" rel="noopener">OpenAI crawler docs</a>, <a href="https://docs.perplexity.ai/docs/resources/perplexity-crawlers" target="_blank" rel="noopener">Perplexity crawler docs</a>, and an open-source log analyzer such as <a href="https://goaccess.io/" target="_blank" rel="noopener">GoAccess</a>.</p>
+            </article>
+            <article class="card">
+              <h3>Repeatable prompt monitoring</h3>
+              <p>For advanced checks, use open-source tools such as <a href="https://github.com/aryamantodkar/oneglanse" target="_blank" rel="noopener">OneGlanse</a> to track real AI product outputs, or <a href="https://github.com/promptfoo/promptfoo" target="_blank" rel="noopener">promptfoo</a> to run repeatable prompt tests. Track whether your brand or URL appears, whether competitors are cited, and which sources answer systems prefer.</p>
             </article>
           </div>
+
+          <ul class="checklist" aria-label="GEO measurement checklist">
+            <li>Inspect priority URLs in Google Search Console and Bing Webmaster Tools.</li>
+            <li>Validate structured data and confirm it matches visible page content.</li>
+            <li>Crawl the site with an SEO crawler such as <a href="https://github.com/janreges/siteone-crawler" target="_blank" rel="noopener">SiteOne Crawler</a> to catch broken links, missing metadata, redirects, and weak pages.</li>
+            <li>Review server logs for search and AI crawler access instead of guessing.</li>
+            <li>Run the same prompt set every week and record citations, mentions, competitors, and source patterns.</li>
+            <li>Treat every score as a diagnostic signal, not as proof that an AI system will cite you.</li>
+          </ul>
         </div>
       </section>
 
@@ -669,10 +686,6 @@ Next step: what the reader should do now.</code></pre>
             <article class="source">
               <a href="https://arxiv.org/abs/2311.09735" target="_blank" rel="noopener">GEO: Generative Engine Optimization</a>
               <span>The original research paper that named GEO and studied visibility in generative engines.</span>
-            </article>
-            <article class="source">
-              <a href="https://ijonis.com/en/ai-visibility-checker" target="_blank" rel="noopener">IJONIS AI Visibility Checker</a>
-              <span>A free, directional GEO checker backed by the open-source <a href="https://github.com/IJONIS/geo-lint" target="_blank" rel="noopener">IJONIS/geo-lint</a> project. Use it to inspect page structure and citation-readiness signals, not as a citation guarantee.</span>
             </article>
           </div>
         </div>
