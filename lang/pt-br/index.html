@@ -13,7 +13,7 @@
     <link rel="alternate" hreflang="pt-BR" href="https://paladini.github.io/generative-engine-optimization-basic-guide/lang/pt-br/">
     <link rel="alternate" hreflang="x-default" href="https://paladini.github.io/generative-engine-optimization-basic-guide/">
     <link rel="icon" href="../../assets/images/geo-mark.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../../assets/css/site.css?v=20260625a">
+    <link rel="stylesheet" href="../../assets/css/site.css?v=20260626a">
 
     <meta name="DC.Title" content="GEO Basics: Guia de Otimização para Motores Generativos">
     <meta name="DC.Creator" content="Fernando Paladini">
@@ -183,15 +183,6 @@
             encontrá-lo, entendê-lo, confiar nele e citá-lo. Ele não substitui o SEO; amplia o SEO para o
             contexto das respostas geradas por IA.
           </p>
-          <div class="answer-block" aria-label="Resposta curta">
-            <strong>Resposta curta:</strong>
-            <p>
-              Otimização para Motores Generativos (GEO) ajuda uma página da web a ser mais fácil de recuperar,
-              interpretar, avaliar e citar por sistemas de busca com IA. Este guia explica fundamentos de SEO,
-              estrutura de conteúdo, marcação Schema.org, controles de crawler, sinais de fonte e hábitos de
-              medição que tornam o conteúdo mais útil para pessoas e mais legível para motores de resposta.
-            </p>
-          </div>
           <nav class="reading-path" aria-label="Caminho recomendado de leitura">
             <span>Comece por aqui:</span>
             <a href="#what">definição</a>
@@ -205,36 +196,17 @@
           </div>
         </div>
 
-        <div class="hero__visual" aria-label="Mapa simplificado de GEO">
-          <div class="answer-map">
-            <div class="answer-map__row">
-              <div class="answer-map__node">
-                <strong>1. Pessoa pergunta</strong>
-                <span>Alguém digita uma dúvida real, com palavras do dia a dia.</span>
-              </div>
-              <span class="answer-map__arrow">depois</span>
-              <div class="answer-map__node">
-                <strong>2. A IA procura fontes</strong>
-                <span>O sistema busca páginas que podem ajudar a responder.</span>
-              </div>
-            </div>
-            <div class="answer-map__row">
-              <div class="answer-map__node">
-                <strong>3. Ela confere provas</strong>
-                <span>Páginas claras, dados, exemplos e contexto especializado são mais fáceis de usar.</span>
-              </div>
-              <span class="answer-map__arrow">depois</span>
-              <div class="answer-map__node">
-                <strong>4. Ela responde</strong>
-                <span>A IA monta um resumo e pode indicar as fontes de apoio.</span>
-              </div>
-            </div>
-            <div class="answer-map__wide">
-              <strong>Seu trabalho em GEO</strong>
-              <span>Escrever páginas que respondem dúvidas reais com clareza, mostram as provas e deixam a fonte fácil de verificar.</span>
-            </div>
-          </div>
-          <p class="hero__note">Use as setas do teclado para avançar pelas seções do guia.</p>
+        <div class="hero__visual hero__answer-card" aria-label="Resposta curta">
+          <strong>Resposta curta:</strong>
+          <p>
+            Otimização para Motores Generativos (GEO) ajuda uma página da web a ser mais fácil de recuperar,
+            interpretar, avaliar e citar por sistemas de busca com IA.
+          </p>
+          <p>
+            Este guia explica fundamentos de SEO, estrutura de conteúdo, marcação Schema.org, controles de
+            crawler, sinais de fonte e hábitos de medição que tornam o conteúdo mais útil para pessoas e mais
+            legível para motores de resposta.
+          </p>
         </div>
       </div>
     </section>
@@ -484,7 +456,7 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
           </article>
 
           <article class="card">
-            <h3><code>llms.txt</code> como guia opcional do site</h3>
+            <h3>llms.txt como guia opcional do site</h3>
             <p>
               Um arquivo <code>llms.txt</code> na raiz é uma convenção proposta em Markdown para ferramentas que optam por lê-lo.
               Use para resumir o site e apontar agentes para recursos canônicos e úteis. Ele não bloqueia crawlers,
@@ -495,25 +467,20 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
               lista URLs canônicas, dados estruturados descrevem o significado do conteúdo visível na página e
               <code>llms.txt</code> oferece uma visão curada para LLMs e agentes.
             </p>
-            <div class="snippet">
+            <div class="snippet snippet--compact">
               <div class="snippet__top">
                 <span>Exemplo de llms.txt</span>
                 <button class="copy-button" data-copy="#snippet-llms" data-copied="Copiado" data-failed="Selecione">Copiar</button>
               </div>
               <pre><code id="snippet-llms"># Site de exemplo
-
-&gt; Um guia introdutório sobre [tópico], com exemplos práticos e explicações apoiadas por fontes.
-
+&gt; Guia prático sobre [tópico], com fontes.
 ## Páginas principais
-
 - [Comece aqui](https://example.com/): Guia principal e definições.
-- [FAQ](https://example.com/faq/): Respostas curtas para perguntas comuns.
-- [Fontes de pesquisa](https://example.com/sources/): Referências primárias e metodologia.
-
+- [FAQ](https://example.com/faq/): Perguntas comuns.
+- [Fontes](https://example.com/sources/): Referências primárias.
 ## Arquivos técnicos
-
-- [Sitemap](https://example.com/sitemap.xml): URLs públicas canônicas.
-- [Regras para robôs](https://example.com/robots.txt): Orientações de acesso para crawlers.</code></pre>
+- [Sitemap](https://example.com/sitemap.xml)
+- [Robots](https://example.com/robots.txt)</code></pre>
             </div>
           </article>
 
@@ -721,6 +688,6 @@ Próximo passo: o que o leitor deve fazer agora.</code></pre>
       </div>
     </footer>
 
-    <script src="../../assets/js/site.js?v=20260625a" defer></script>
+    <script src="../../assets/js/site.js?v=20260626a" defer></script>
   </body>
 </html>
