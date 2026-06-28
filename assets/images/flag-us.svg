@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" role="img" aria-labelledby="title">
+  <title id="title">Bandeira dos Estados Unidos</title>
+  <defs>
+    <clipPath id="flag-us-clip">
+      <rect width="36" height="24" rx="2"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#flag-us-clip)">
+    <rect width="36" height="24" fill="#fff"/>
+    <path fill="#b22234" d="M0 0h36v1.85H0zM0 3.69h36v1.85H0zM0 7.38h36v1.85H0zM0 11.08h36v1.85H0zM0 14.77h36v1.85H0zM0 18.46h36v1.85H0zM0 22.15h36V24H0z"/>
+    <rect width="15.6" height="12.92" fill="#3c3b6e"/>
+    <g fill="#fff">
+      <circle cx="2" cy="1.4" r=".28"/>
+      <circle cx="5" cy="1.4" r=".28"/>
+      <circle cx="8" cy="1.4" r=".28"/>
+      <circle cx="11" cy="1.4" r=".28"/>
+      <circle cx="14" cy="1.4" r=".28"/>
+      <circle cx="3.5" cy="3.15" r=".28"/>
+      <circle cx="6.5" cy="3.15" r=".28"/>
+      <circle cx="9.5" cy="3.15" r=".28"/>
+      <circle cx="12.5" cy="3.15" r=".28"/>
+      <circle cx="2" cy="4.9" r=".28"/>
+      <circle cx="5" cy="4.9" r=".28"/>
+      <circle cx="8" cy="4.9" r=".28"/>
+      <circle cx="11" cy="4.9" r=".28"/>
+      <circle cx="14" cy="4.9" r=".28"/>
+      <circle cx="3.5" cy="6.65" r=".28"/>
+      <circle cx="6.5" cy="6.65" r=".28"/>
+      <circle cx="9.5" cy="6.65" r=".28"/>
+      <circle cx="12.5" cy="6.65" r=".28"/>
+      <circle cx="2" cy="8.4" r=".28"/>
+      <circle cx="5" cy="8.4" r=".28"/>
+      <circle cx="8" cy="8.4" r=".28"/>
+      <circle cx="11" cy="8.4" r=".28"/>
+      <circle cx="14" cy="8.4" r=".28"/>
+      <circle cx="3.5" cy="10.15" r=".28"/>
+      <circle cx="6.5" cy="10.15" r=".28"/>
+      <circle cx="9.5" cy="10.15" r=".28"/>
+      <circle cx="12.5" cy="10.15" r=".28"/>
+      <circle cx="2" cy="11.9" r=".28"/>
+      <circle cx="5" cy="11.9" r=".28"/>
+      <circle cx="8" cy="11.9" r=".28"/>
+      <circle cx="11" cy="11.9" r=".28"/>
+      <circle cx="14" cy="11.9" r=".28"/>
+    </g>
+  </g>
+</svg>
