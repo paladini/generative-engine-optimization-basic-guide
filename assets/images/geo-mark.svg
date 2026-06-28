@@ -1,10 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
   <title id="title">GEO Basics mark</title>
-  <desc id="desc">A simple geometric mark showing a search path becoming an answer.</desc>
-  <rect width="96" height="96" rx="16" fill="#111827"/>
-  <circle cx="28" cy="32" r="12" fill="#0e766f"/>
-  <circle cx="66" cy="30" r="10" fill="#3147a8"/>
-  <circle cx="50" cy="66" r="12" fill="#b46a00"/>
-  <path d="M39 33h16M60 39 54 56M40 58 33 43" fill="none" stroke="#f8fafc" stroke-width="6" stroke-linecap="round"/>
-  <path d="M25 72h48" stroke="#f8fafc" stroke-width="6" stroke-linecap="round" opacity=".82"/>
+  <desc id="desc">A connected retrieval graph showing a question, source signals, and a cited answer.</desc>
+  <rect width="96" height="96" rx="18" fill="#111827"/>
+  <path d="M29 31 59 27 71 55 39 67 29 31Z" fill="#172033" opacity=".72"/>
+  <path d="M29 31 59 27M59 27 71 55M29 31 39 67M39 67 71 55M59 27 39 67" fill="none" stroke="#e5edf7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".86"/>
+  <circle cx="29" cy="31" r="12" fill="#0e766f"/>
+  <circle cx="59" cy="27" r="11" fill="#3147a8"/>
+  <circle cx="39" cy="67" r="11" fill="#b46a00"/>
+  <circle cx="71" cy="55" r="13" fill="#f8fafc"/>
+  <circle cx="28" cy="29" r="4.75" fill="none" stroke="#ccfbf1" stroke-width="3"/>
+  <path d="M32 33 36 37" fill="none" stroke="#ccfbf1" stroke-width="3" stroke-linecap="round"/>
+  <path d="M54 24h10M54 30h7M34 64h10M34 70h7" fill="none" stroke="#f8fafc" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+  <path d="M65 55 69 59 78 50" fill="none" stroke="#111827" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
