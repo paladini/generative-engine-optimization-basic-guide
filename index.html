@@ -128,7 +128,7 @@
                 "name": "Should I create an llms.txt file?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, if your important pages are already crawlable, canonical, useful, and current. A root llms.txt file can give AI agents a concise guide to your best public resources, but it is optional and does not guarantee rankings, traffic, or citations."
+                  "text": "Yes. A root llms.txt file belongs in GEO basics because it gives LLMs, agents, and AI browsing tools a concise map of your best public resources. Create it after your important pages are crawlable, canonical, useful, and current; it complements robots.txt and sitemap.xml, but it does not control crawling or guarantee rankings, traffic, or citations."
                 }
               },
               {
@@ -159,6 +159,7 @@
           <a href="#what">What is GEO?</a>
           <a href="#systems">How AI answers work</a>
           <a href="#apply">Apply it</a>
+          <a href="#llms">llms.txt</a>
           <a href="#examples">Examples</a>
           <a href="#measure">Measure</a>
           <a href="#faq">FAQ</a>
@@ -187,6 +188,7 @@
             <span>Start here:</span>
             <a href="#what">definition</a>
             <a href="#apply">page optimization</a>
+            <a href="#llms">llms.txt</a>
             <a href="#measure">measurement</a>
             <a href="#faq">FAQ</a>
           </nav>
@@ -203,8 +205,8 @@
           </p>
           <p>
             This guide explains the GEO basics: clear answers, content structure, Schema.org markup, crawler
-            controls, source signals, and measurement habits that make content more useful to humans and more
-            legible to answer engines.
+            controls, <code>llms.txt</code> site guides, source signals, and measurement habits that make content
+            more useful to humans and more legible to answer engines.
           </p>
         </div>
       </div>
@@ -254,6 +256,7 @@
             <li>Direct answers</li>
             <li>Evidence and sources</li>
             <li>Structured data</li>
+            <li>llms.txt guides</li>
             <li>Fresh updates</li>
           </ul>
         </div>
@@ -294,8 +297,8 @@
             <span class="section__number">03. The basics</span>
             <h2>The six GEO pillars</h2>
             <p class="lead">
-              If you only remember one thing, remember this sequence: discover, understand, trust, quote,
-              connect, refresh.
+              If you only remember one thing, remember this sequence: discover, understand, be useful,
+              build trust, be citable, stay fresh.
             </p>
           </div>
 
@@ -386,14 +389,91 @@
         </div>
       </section>
 
+      <section class="section" id="llms">
+        <div class="section__inner">
+          <div class="section__header">
+            <span class="section__number">05. Agent guide</span>
+            <h2>How llms.txt fits GEO</h2>
+            <p class="lead">
+              A root <code>llms.txt</code> file is a Markdown guide for LLMs, agents, and AI browsing tools
+              that choose to read it. It belongs in GEO basics because it helps those tools find your best
+              public resources after your pages are already crawlable, useful, and up to date.
+            </p>
+          </div>
+
+          <div class="grid grid--2">
+            <article class="card">
+              <h3>What it does</h3>
+              <p>
+                Use <code>llms.txt</code> to summarize the site, name the intended audience, list canonical
+                starting points, point to primary sources, and explain where technical files or update policies live.
+                It is a curated map for agents, not a replacement for the content itself.
+              </p>
+            </article>
+            <article class="card">
+              <h3>What it does not do</h3>
+              <p>
+                It does not control crawler access, replace a sitemap, make hidden content visible, or guarantee
+                rankings, traffic, or AI citations. For Google Search and its generative AI features, normal Search
+                crawling and snippet controls still matter.
+              </p>
+            </article>
+          </div>
+
+          <ul class="checklist" aria-label="How llms.txt relates to other GEO files">
+            <li><code>robots.txt</code> gives crawler access guidance.</li>
+            <li><code>sitemap.xml</code> lists canonical URLs.</li>
+            <li>Visible HTML carries the main content for readers and systems.</li>
+            <li>Structured data gives explicit clues about visible page meaning.</li>
+            <li><code>llms.txt</code> gives LLMs and agents a curated guide to the site's best public resources.</li>
+          </ul>
+
+          <article class="card">
+            <h3>A beginner-friendly llms.txt structure</h3>
+            <p>
+              Keep it short, source-backed, and honest. Link to pages that already explain the topic well, and
+              update the file when your canonical resources or platform guidance changes. The
+              <a href="https://llmstxt.org/" target="_blank" rel="noopener">llms.txt proposal</a> defines the
+              convention, and the
+              <a href="https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt" target="_blank" rel="noopener">Lighthouse llms.txt audit</a>
+              can help check whether the file is discoverable.
+            </p>
+            <div class="snippet snippet--compact">
+              <div class="snippet__top">
+                <span>llms.txt example</span>
+                <button class="copy-button" data-copy="#snippet-llms" data-copied="Copied" data-failed="Select">Copy</button>
+              </div>
+              <pre><code id="snippet-llms"># Example Site
+&gt; Practical, source-backed guide to [topic] for [audience].
+
+## Start here
+- [Main guide](https://example.com/): Definitions, examples, and current recommendations.
+- [FAQ](https://example.com/faq/): Short answers to common questions.
+
+## Canonical resources
+- [Methodology](https://example.com/methodology/): How advice is researched and updated.
+- [Sources](https://example.com/sources/): Primary references and citations.
+
+## Technical files
+- [Sitemap](https://example.com/sitemap.xml): Canonical URL list.
+- [Robots](https://example.com/robots.txt): Crawler access guidance.
+
+## Update policy
+- Updated monthly or when platform documentation changes.
+- Prefer the canonical pages above over summaries on third-party sites.</code></pre>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="section" id="examples">
         <div class="section__inner">
           <div class="section__header">
-            <span class="section__number">05. Examples</span>
+            <span class="section__number">06. Examples</span>
             <h2>Small snippets you can reuse</h2>
             <p class="lead">
               These are not magic tags. They are examples of clear publishing: metadata, structured data,
-              crawler controls, optional LLM-readable site guides, and article shape.
+              crawler controls, and article shape.
             </p>
           </div>
 
@@ -454,35 +534,6 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
           </article>
 
           <article class="card">
-            <h3>llms.txt as an optional site guide</h3>
-            <p>
-              A root <code>llms.txt</code> file is a proposed Markdown convention for tools that choose to read it.
-              Use it to summarize your site and point agents to canonical, useful resources. It does not block crawlers,
-              replace a sitemap, or guarantee rankings and AI citations.
-            </p>
-            <p>
-              Think of the roles this way: <code>robots.txt</code> gives crawler access guidance, <code>sitemap.xml</code>
-              lists canonical URLs, structured data describes visible page meaning, and <code>llms.txt</code> gives a curated
-              overview for LLMs and agents.
-            </p>
-            <div class="snippet snippet--compact">
-              <div class="snippet__top">
-                <span>llms.txt example</span>
-                <button class="copy-button" data-copy="#snippet-llms" data-copied="Copied" data-failed="Select">Copy</button>
-              </div>
-              <pre><code id="snippet-llms"># Example Site
-&gt; Practical, source-backed guide to [topic].
-## Key pages
-- [Start here](https://example.com/): Main guide and definitions.
-- [FAQ](https://example.com/faq/): Common questions.
-- [Sources](https://example.com/sources/): Primary references.
-## Technical files
-- [Sitemap](https://example.com/sitemap.xml)
-- [Robots](https://example.com/robots.txt)</code></pre>
-            </div>
-          </article>
-
-          <article class="card">
             <h3>A quotable article structure</h3>
             <p>Make the useful answer easy to quote, then give the reader proof and context.</p>
             <div class="snippet">
@@ -506,7 +557,7 @@ Next step: what the reader should do now.</code></pre>
       <section class="section section--soft" id="myths">
         <div class="section__inner">
           <div class="section__header">
-            <span class="section__number">06. Caution</span>
+            <span class="section__number">07. Caution</span>
             <h2>Can GEO guarantee AI citations?</h2>
             <p class="lead">
               No. GEO can improve whether a page is clear, crawlable, useful, and citation-ready, but no technique
@@ -532,21 +583,13 @@ Next step: what the reader should do now.</code></pre>
               <p>Useful images, video, diagrams, product feeds, and business profiles can help when they match what users need.</p>
             </article>
           </div>
-
-          <div class="callout">
-            <p>
-              About <code>llms.txt</code>: it is useful enough to document and, for many sites, cheap enough to add.
-              Still, Google says it is not required for Google Search or its generative AI search features. Treat it as
-              optional agent-readiness work, not as a required GEO step or citation guarantee.
-            </p>
-          </div>
         </div>
       </section>
 
       <section class="section" id="measure">
         <div class="section__inner">
           <div class="section__header">
-            <span class="section__number">07. Improvement loop</span>
+            <span class="section__number">08. Improvement loop</span>
             <h2>How to measure GEO visibility</h2>
             <p class="lead">
               GEO measurement is still immature, but you can check real signals: crawl access, indexing,
@@ -599,7 +642,7 @@ Next step: what the reader should do now.</code></pre>
       <section class="section" id="faq">
         <div class="section__inner">
           <div class="section__header">
-            <span class="section__number">08. FAQ</span>
+            <span class="section__number">09. FAQ</span>
             <h2>Generative Engine Optimization FAQ</h2>
             <p class="lead">
               Short answers to the questions people ask when they first compare GEO, SEO, AI search visibility,
@@ -622,7 +665,7 @@ Next step: what the reader should do now.</code></pre>
             </article>
             <article class="faq-item">
               <h3>Should I create an <code>llms.txt</code> file?</h3>
-              <p>Yes, if your important pages are already crawlable, canonical, useful, and current. A root <code>llms.txt</code> file can give AI agents a concise guide to your best public resources, but it is optional and does not guarantee rankings, traffic, or citations.</p>
+              <p>Yes. A root <code>llms.txt</code> file belongs in GEO basics because it gives LLMs, agents, and AI browsing tools a concise map of your best public resources. Create it after your important pages are crawlable, canonical, useful, and current; it complements <code>robots.txt</code> and <code>sitemap.xml</code>, but it does not control crawling or guarantee rankings, traffic, or citations.</p>
             </article>
             <article class="faq-item">
               <h3>Which crawlers matter for AI search?</h3>
@@ -635,7 +678,7 @@ Next step: what the reader should do now.</code></pre>
       <section class="section section--soft" id="sources">
         <div class="section__inner">
           <div class="section__header">
-            <span class="section__number">09. Sources</span>
+            <span class="section__number">10. Sources</span>
             <h2>Read the originals</h2>
             <p class="lead">
               GEO changes quickly. Use this guide as a starting point, then verify important platform rules in primary sources.
@@ -673,7 +716,7 @@ Next step: what the reader should do now.</code></pre>
             </article>
             <article class="source">
               <a href="https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt" target="_blank" rel="noopener">Chrome Developers: Lighthouse llms.txt audit</a>
-              <span>Describes <code>llms.txt</code> as an optional emerging convention for agentic browsing readiness.</span>
+              <span>Explains how Lighthouse checks whether <code>llms.txt</code> is discoverable for agentic browsing readiness.</span>
             </article>
             <article class="source">
               <a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" target="_blank" rel="noopener">Google Search Central: structured data intro</a>
