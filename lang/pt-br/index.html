@@ -129,7 +129,7 @@
                 "name": "Devo criar um arquivo llms.txt?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Sim, se suas páginas importantes já são rastreáveis, canônicas, úteis e atuais. Um arquivo llms.txt na raiz pode oferecer aos agentes de IA um guia conciso para os melhores recursos públicos do site, mas ele é opcional e não garante posições, tráfego ou citações."
+                  "text": "Sim. Um arquivo llms.txt na raiz faz parte do básico de GEO porque oferece a LLMs, agentes e ferramentas de navegação por IA um mapa conciso dos melhores recursos públicos do site. Crie esse arquivo depois que suas páginas importantes já forem rastreáveis, canônicas, úteis e atuais; ele complementa robots.txt e sitemap.xml, mas não controla rastreamento nem garante posições, tráfego ou citações."
                 }
               },
               {
@@ -160,6 +160,7 @@
           <a href="#what">O que é GEO?</a>
           <a href="#systems">Como a IA responde</a>
           <a href="#apply">Aplicar</a>
+          <a href="#llms">llms.txt</a>
           <a href="#examples">Exemplos</a>
           <a href="#measure">Medir</a>
           <a href="#faq">FAQ</a>
@@ -188,6 +189,7 @@
             <span>Comece por aqui:</span>
             <a href="#what">definição</a>
             <a href="#apply">otimização da página</a>
+            <a href="#llms">llms.txt</a>
             <a href="#measure">medição</a>
             <a href="#faq">FAQ</a>
           </nav>
@@ -205,8 +207,8 @@
           </p>
           <p>
             Este guia explica os fundamentos de GEO: respostas claras, estrutura de conteúdo, marcação
-            Schema.org, controles de crawler, sinais de fonte e hábitos de medição que tornam o conteúdo mais
-            útil para pessoas e mais legível para motores de resposta.
+            Schema.org, controles de crawler, guias <code>llms.txt</code>, sinais de fonte e hábitos de medição
+            que tornam o conteúdo mais útil para pessoas e mais legível para motores de resposta.
           </p>
         </div>
       </div>
@@ -256,6 +258,7 @@
             <li>Respostas diretas</li>
             <li>Evidências e fontes</li>
             <li>Dados estruturados</li>
+            <li>Guias llms.txt</li>
             <li>Conteúdo atualizado</li>
           </ul>
         </div>
@@ -296,8 +299,8 @@
             <span class="section__number">03. O básico</span>
             <h2>Os seis pilares de GEO</h2>
             <p class="lead">
-              Se for para guardar uma sequência, guarde esta: ser encontrado, ser entendido, gerar confiança,
-              ser citado, conectar ideias e manter tudo atualizado.
+              Se for para guardar uma sequência, guarde esta: ser encontrado, ser entendido, ser útil,
+              gerar confiança, ser citável e manter tudo atualizado.
             </p>
           </div>
 
@@ -389,14 +392,92 @@
         </div>
       </section>
 
+      <section class="section" id="llms">
+        <div class="section__inner">
+          <div class="section__header">
+            <span class="section__number">05. Guia para agentes</span>
+            <h2>Como o llms.txt entra em GEO</h2>
+            <p class="lead">
+              Um arquivo <code>llms.txt</code> na raiz do site é um guia em Markdown para LLMs, agentes e
+              ferramentas de navegação por IA que optem por lê-lo. Ele entra no básico de GEO porque ajuda
+              essas ferramentas a encontrar seus melhores recursos públicos depois que suas páginas já são
+              rastreáveis, úteis e atuais.
+            </p>
+          </div>
+
+          <div class="grid grid--2">
+            <article class="card">
+              <h3>O que ele faz</h3>
+              <p>
+                Use o <code>llms.txt</code> para resumir o site, indicar o público, listar pontos de partida
+                canônicos, apontar para fontes primárias e explicar onde ficam arquivos técnicos ou políticas de
+                atualização. Ele é um mapa curado para agentes, não um substituto do conteúdo.
+              </p>
+            </article>
+            <article class="card">
+              <h3>O que ele não faz</h3>
+              <p>
+                Ele não controla acesso de crawlers, não substitui o sitemap, não torna conteúdo escondido visível
+                e não garante posições, tráfego ou citações por IA. Para a Busca Google e seus recursos generativos,
+                o rastreamento normal da Busca e os controles de snippet continuam importantes.
+              </p>
+            </article>
+          </div>
+
+          <ul class="checklist" aria-label="Como llms.txt se relaciona com outros arquivos de GEO">
+            <li><code>robots.txt</code> orienta o acesso de crawlers.</li>
+            <li><code>sitemap.xml</code> lista URLs canônicas.</li>
+            <li>O HTML visível carrega o conteúdo principal para leitores e sistemas.</li>
+            <li>Dados estruturados dão pistas explícitas sobre o significado do conteúdo visível.</li>
+            <li><code>llms.txt</code> entrega a LLMs e agentes um guia curado dos melhores recursos públicos do site.</li>
+          </ul>
+
+          <article class="card">
+            <h3>Uma estrutura simples para llms.txt</h3>
+            <p>
+              Mantenha o arquivo curto, baseado em fontes e honesto. Aponte para páginas que já explicam bem o
+              assunto e atualize o arquivo quando seus recursos canônicos ou a orientação das plataformas mudarem.
+              A <a href="https://llmstxt.org/" target="_blank" rel="noopener">proposta do llms.txt</a> define a
+              convenção, e a
+              <a href="https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt" target="_blank" rel="noopener">auditoria de llms.txt no Lighthouse</a>
+              ajuda a checar se o arquivo está fácil de descobrir.
+            </p>
+            <div class="snippet snippet--compact">
+              <div class="snippet__top">
+                <span>Exemplo de llms.txt</span>
+                <button class="copy-button" data-copy="#snippet-llms" data-copied="Copiado" data-failed="Selecione">Copiar</button>
+              </div>
+              <pre><code id="snippet-llms"># Site de exemplo
+&gt; Guia prático, com fontes, sobre [tópico] para [público].
+
+## Comece aqui
+- [Guia principal](https://example.com/): Definições, exemplos e recomendações atuais.
+- [FAQ](https://example.com/faq/): Respostas curtas para dúvidas comuns.
+
+## Recursos canônicos
+- [Metodologia](https://example.com/methodology/): Como as orientações são pesquisadas e atualizadas.
+- [Fontes](https://example.com/sources/): Referências primárias e citações.
+
+## Arquivos técnicos
+- [Sitemap](https://example.com/sitemap.xml): Lista de URLs canônicas.
+- [Robots](https://example.com/robots.txt): Orientação de acesso para crawlers.
+
+## Política de atualização
+- Atualizado mensalmente ou quando a documentação das plataformas mudar.
+- Prefira as páginas canônicas acima em vez de resumos em sites de terceiros.</code></pre>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="section" id="examples">
         <div class="section__inner">
           <div class="section__header">
-            <span class="section__number">05. Exemplos</span>
+            <span class="section__number">06. Exemplos</span>
             <h2>Trechos curtos que você pode reutilizar</h2>
             <p class="lead">
               Estes exemplos não são tags mágicas. São modelos de publicação clara: metadados,
-              dados estruturados, controles de crawler, guias opcionais legíveis por LLMs e estrutura de artigo.
+              dados estruturados, controles de crawler e estrutura de artigo.
             </p>
           </div>
 
@@ -457,35 +538,6 @@ Sitemap: https://example.com/sitemap.xml</code></pre>
           </article>
 
           <article class="card">
-            <h3>llms.txt como guia opcional do site</h3>
-            <p>
-              Um arquivo <code>llms.txt</code> na raiz é uma convenção proposta em Markdown para ferramentas que optam por lê-lo.
-              Use para resumir o site e apontar agentes para recursos canônicos e úteis. Ele não bloqueia crawlers,
-              não substitui o sitemap e não garante posições nem citações por IA.
-            </p>
-            <p>
-              Pense nos papéis assim: <code>robots.txt</code> orienta acesso de crawlers, <code>sitemap.xml</code>
-              lista URLs canônicas, dados estruturados descrevem o significado do conteúdo visível na página e
-              <code>llms.txt</code> oferece uma visão curada para LLMs e agentes.
-            </p>
-            <div class="snippet snippet--compact">
-              <div class="snippet__top">
-                <span>Exemplo de llms.txt</span>
-                <button class="copy-button" data-copy="#snippet-llms" data-copied="Copiado" data-failed="Selecione">Copiar</button>
-              </div>
-              <pre><code id="snippet-llms"># Site de exemplo
-&gt; Guia prático sobre [tópico], com fontes.
-## Páginas principais
-- [Comece aqui](https://example.com/): Guia principal e definições.
-- [FAQ](https://example.com/faq/): Perguntas comuns.
-- [Fontes](https://example.com/sources/): Referências primárias.
-## Arquivos técnicos
-- [Sitemap](https://example.com/sitemap.xml)
-- [Robots](https://example.com/robots.txt)</code></pre>
-            </div>
-          </article>
-
-          <article class="card">
             <h3>Estrutura de artigo citável</h3>
             <p>Deixe a resposta útil fácil de citar; depois entregue prova e contexto para o leitor.</p>
             <div class="snippet">
@@ -509,7 +561,7 @@ Próximo passo: o que o leitor deve fazer agora.</code></pre>
       <section class="section section--soft" id="myths">
         <div class="section__inner">
           <div class="section__header">
-            <span class="section__number">06. Cuidado</span>
+            <span class="section__number">07. Cuidado</span>
             <h2>GEO pode garantir citações por IA?</h2>
             <p class="lead">
               Não. GEO pode melhorar clareza, rastreabilidade, utilidade e prontidão para citação, mas nenhuma técnica
@@ -535,21 +587,13 @@ Próximo passo: o que o leitor deve fazer agora.</code></pre>
               <p>Imagens, vídeos, diagramas, feeds de produto e perfis comerciais ajudam quando combinam com o que o usuário precisa.</p>
             </article>
           </div>
-
-          <div class="callout">
-            <p>
-              Sobre <code>llms.txt</code>: ele é útil o bastante para ser explicado e, em muitos sites, barato o bastante para ser adicionado.
-              Ainda assim, o Google afirma que ele não é obrigatório para a Busca Google nem para seus recursos generativos.
-              Trate como trabalho opcional de preparação para agentes, não como etapa obrigatória de GEO nem garantia de citação.
-            </p>
-          </div>
         </div>
       </section>
 
       <section class="section" id="measure">
         <div class="section__inner">
           <div class="section__header">
-            <span class="section__number">07. Ciclo de melhoria</span>
+            <span class="section__number">08. Ciclo de melhoria</span>
             <h2>Como medir visibilidade em GEO</h2>
             <p class="lead">
               A medição de GEO ainda está amadurecendo, mas você pode checar sinais reais:
@@ -603,7 +647,7 @@ Próximo passo: o que o leitor deve fazer agora.</code></pre>
       <section class="section" id="faq">
         <div class="section__inner">
           <div class="section__header">
-            <span class="section__number">08. FAQ</span>
+            <span class="section__number">09. FAQ</span>
             <h2>Perguntas frequentes sobre GEO</h2>
             <p class="lead">
               Respostas curtas para quem está comparando GEO, SEO, visibilidade em busca com IA,
@@ -626,7 +670,7 @@ Próximo passo: o que o leitor deve fazer agora.</code></pre>
             </article>
             <article class="faq-item">
               <h3>Devo criar um arquivo <code>llms.txt</code>?</h3>
-              <p>Sim, se suas páginas importantes já são rastreáveis, canônicas, úteis e atuais. Um arquivo <code>llms.txt</code> na raiz pode oferecer aos agentes de IA um guia conciso para os melhores recursos públicos do site, mas ele é opcional e não garante posições, tráfego ou citações.</p>
+              <p>Sim. Um arquivo <code>llms.txt</code> na raiz faz parte do básico de GEO porque oferece a LLMs, agentes e ferramentas de navegação por IA um mapa conciso dos melhores recursos públicos do site. Crie esse arquivo depois que suas páginas importantes já forem rastreáveis, canônicas, úteis e atuais; ele complementa <code>robots.txt</code> e <code>sitemap.xml</code>, mas não controla rastreamento nem garante posições, tráfego ou citações.</p>
             </article>
             <article class="faq-item">
               <h3>Quais crawlers importam para busca com IA?</h3>
@@ -639,7 +683,7 @@ Próximo passo: o que o leitor deve fazer agora.</code></pre>
       <section class="section section--soft" id="sources">
         <div class="section__inner">
           <div class="section__header">
-            <span class="section__number">09. Fontes</span>
+            <span class="section__number">10. Fontes</span>
             <h2>Leia os originais</h2>
             <p class="lead">
               GEO muda rápido. Use este guia como ponto de partida e verifique regras importantes nas fontes primárias.
@@ -677,7 +721,7 @@ Próximo passo: o que o leitor deve fazer agora.</code></pre>
             </article>
             <article class="source">
               <a href="https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt" target="_blank" rel="noopener">Chrome Developers: auditoria llms.txt no Lighthouse</a>
-              <span>Descreve <code>llms.txt</code> como convenção emergente e opcional para preparação de sites para navegação por agentes.</span>
+              <span>Explica como o Lighthouse checa se o <code>llms.txt</code> está fácil de descobrir para navegação por agentes.</span>
             </article>
             <article class="source">
               <a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" target="_blank" rel="noopener">Google Search Central: introdução a dados estruturados</a>
